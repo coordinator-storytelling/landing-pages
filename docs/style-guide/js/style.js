@@ -67,7 +67,7 @@ const colorPalette = {
   }
 }
 
-const headingTags = ['H1', 'H2', 'H3', 'H4', 'H5']
+const headingTags = ['H1', 'H2', 'H3', 'H4']
 const headingList = headingTags.map((elem, index) => {
   return {
     tag: elem,
