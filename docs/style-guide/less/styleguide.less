@@ -9,8 +9,6 @@
   .flex(column);
   margin: 0 auto;
 
-
-
   .style-guide-info {
     .flex();
     flex-wrap: nowrap;
@@ -18,17 +16,23 @@
     section {
       width: 90%;
       margin: 10px auto;
-      padding: 10px;
+      padding: 20px;
       background: @lightText;
+      display: grid;
+      //.flex(column);
+
 
       .item {
         margin-top: 20px;
+
         .description {
-          font-size: 0.85rem;
+          font-size: 1rem;
+          margin: 10px auto;
         }
 
         .sample {
-          font-size: 0.85rem;
+          font-size: 1rem;
+          margin: 10px auto;
         }
       }
     }
@@ -77,7 +81,7 @@
       .sample {
         width: 80%;
         padding: 20px;
-                border: 1px solid @primaryBgShading;
+        border: 1px solid @primaryBgShading;
       }
     }
   }
