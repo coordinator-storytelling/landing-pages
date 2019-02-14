@@ -9,7 +9,7 @@ The Landing Page serves two purposes:
 ## Information Architecture
 
 ### SITE WIDE
-#### Page Header
+#### Header
 * Logo
 * Main Nav Menu
   * About
@@ -31,22 +31,22 @@ The Landing Page serves two purposes:
 
 #### Features & Benefits
 * F&B Item
-  * Feature pic/icon
+  * Feature Pic/Icon
   * Benefit Heading
-  * Feature caption
+  * Feature Caption
   * CTA* _(pending)_
 
 #### Testimonials
-* Recipient stories
+* Recipient Stories
 * Coordinator/Volunteer stories
-* Donor stories
+* Donor Stories
 * CTA* _(pending)_
 
 #### ABOUT PAGE
-* Mock organization background
+* Mock Organization Background
 * Dev Team Directory
   * Photo
   * Name
   * Role
-  * GitHub link
-  * LinkedIn link
+  * GitHub Link
+  * LinkedIn Link
