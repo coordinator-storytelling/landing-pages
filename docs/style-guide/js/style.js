@@ -110,10 +110,11 @@ const fontInfo = []
 for (let i = 0; i < fontItems.length; i++) {
   fontInfo.push([fontItems[i],fontSamples[i]])
 }
-//console.log(fontInfo)
+
 fontInfo.forEach(item => {
   item[1].style.fontFamily = item[0].querySelector('.description').textContent
 })
+
 const colors = document.querySelector('#color-palette')
 displayContent(colorPalette, colors)
 const colorSamples = document.querySelectorAll('#color-palette .sample')
@@ -123,33 +124,19 @@ const headings = document.querySelector('#page-headings')
 displayContent(headingList, headings)
 
 const headingItems = document.querySelectorAll('#page-headings .item')
-// console.log(headingItems)
 const headingSamples = document.querySelectorAll('#page-headings .sample')
-// console.log(headingSamples)
 const headingTagNames = document.querySelectorAll('#page-headings .name')
-// console.log(headingTagNames)
 const headingInfo = []
 for (let i = 0; i < headingItems.length; i++) {
   headingInfo.push([headingItems[i], headingSamples[i], headingTagNames[i]])
 }
-console.log(headingInfo)
+
 headingInfo.forEach(item => {
-  console.log(item[2].textContent)
+  let sampleText = item[1].textContent
+  item[1].textContent = ''
   let newElem = document.createElement(item[2].textContent)
   item[1].append(newElem)
-  console.log(item[1].textContent)
-  //item[1].querySelector('h2').textContent = 'Hello World!'
-
-  
+  item[1].querySelector(item[2].textContent).textContent = sampleText
 })
 
-// headingItems.forEach(item => {
-//   // console.log(item.querySelector('.name').textContent)
-//   let newElem = document.createElement(item.querySelector('.name').textContent)
-//   console.log(newElem, item)
-//   document.querySelectorAll('#page-headings .sample').forEach(item => item.appendChild(newElem))
-//   console.log(document.querySelector('#page-headings .sample').textContent)
-// })
-//headingItems.forEach(item => console.log(item))
-// console.log(headingItems)
 
