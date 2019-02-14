@@ -2,13 +2,16 @@
 // Typography
 const fontList = {
   logoFont : {
-    description: "Varela, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
+    name: "Logo Font",
+    description: "'Varela Round', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
     sample: "Acme, Inc."},
   headingFont : {
-    description: "Varela, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
+    name: "Heading Font",
+    description: "'Varela Round', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
     sample: "The quick, brown fox"
   },
   defaultFont: {
+    name: "Default Font",
     description: "'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
     sample: "The quick, brown fox"
   },
@@ -68,9 +71,9 @@ const headingTags = ['H1', 'H2', 'H3', 'H4', 'H5']
 const headingList = headingTags.map((elem, index) => {
   return {
     tag: elem,
-    name: `Heading${index+1}`,
+    name: elem,
     description: fontList.headingFont.description,
-    get sample () { return this.name },
+    sample: `Heading${index + 1}`,
   }
 })
 
@@ -100,10 +103,53 @@ const displayContent = (obj, section) => {
 
 const typography = document.querySelector('#typography')
 displayContent(fontList, typography)
+const fontItems = document.querySelectorAll('#typography .item')
+const fontSamples = document.querySelectorAll('#typography .sample')
+const fontInfo = []
 
+for (let i = 0; i < fontItems.length; i++) {
+  fontInfo.push([fontItems[i],fontSamples[i]])
+}
+//console.log(fontInfo)
+fontInfo.forEach(item => {
+  item[1].style.fontFamily = item[0].querySelector('.description').textContent
+})
 const colors = document.querySelector('#color-palette')
 displayContent(colorPalette, colors)
+const colorSamples = document.querySelectorAll('#color-palette .sample')
+colorSamples.forEach(item => item.style.backgroundColor = item.textContent)
 
 const headings = document.querySelector('#page-headings')
 displayContent(headingList, headings)
+
+const headingItems = document.querySelectorAll('#page-headings .item')
+// console.log(headingItems)
+const headingSamples = document.querySelectorAll('#page-headings .sample')
+// console.log(headingSamples)
+const headingTagNames = document.querySelectorAll('#page-headings .name')
+// console.log(headingTagNames)
+const headingInfo = []
+for (let i = 0; i < headingItems.length; i++) {
+  headingInfo.push([headingItems[i], headingSamples[i], headingTagNames[i]])
+}
+console.log(headingInfo)
+headingInfo.forEach(item => {
+  console.log(item[2].textContent)
+  let newElem = document.createElement(item[2].textContent)
+  item[1].append(newElem)
+  console.log(item[1].textContent)
+  //item[1].querySelector('h2').textContent = 'Hello World!'
+
+  
+})
+
+// headingItems.forEach(item => {
+//   // console.log(item.querySelector('.name').textContent)
+//   let newElem = document.createElement(item.querySelector('.name').textContent)
+//   console.log(newElem, item)
+//   document.querySelectorAll('#page-headings .sample').forEach(item => item.appendChild(newElem))
+//   console.log(document.querySelector('#page-headings .sample').textContent)
+// })
+//headingItems.forEach(item => console.log(item))
+// console.log(headingItems)
 
