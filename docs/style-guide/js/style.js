@@ -73,7 +73,7 @@ const headingList = headingTags.map((elem, index) => {
     get sample () { return this.name },
   }
 })
-console.log(headingList)
+
 const pageElements = {
 
 }
@@ -85,9 +85,7 @@ const displayContent = (obj, section) => {
     section.append(newItem)
     let newItemName = document.createElement('p')
     newItemName.classList.add('name')
-    console.log(obj[key].name)
     newItemName.textContent = obj[key].name
-    console.log(newItemName)
     newItem.append(newItemName)
     let newItemDesc = document.createElement('p')
     newItemDesc.classList.add('description')
