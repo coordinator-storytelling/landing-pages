@@ -7,9 +7,18 @@ html {
   font-size: 62.5%;
 }
 
+body * {
+  font-family: @defaultFont;
+}
+
 h1, h2, h3, h4, h5 {
-  //font-family: 'Russo One', sans-serif;
+  font-family: @headingFont;
   color: @headingColor;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
 }
 
 h2 {

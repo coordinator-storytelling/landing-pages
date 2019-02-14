@@ -1,25 +1,84 @@
+.headline {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
 .style-guide {
   max-width: 800px;
+  background: @primaryBgShading;
   .flex(column);
   margin: 0 auto;
+
+
 
   .style-guide-info {
     .flex();
     flex-wrap: nowrap;
 
+    section {
+      width: 90%;
+      margin: 10px auto;
+      padding: 10px;
+      background: @lightText;
+
+      .item {
+        margin-top: 20px;
+        .description {
+          font-size: 0.85rem;
+        }
+
+        .sample {
+          font-size: 0.85rem;
+        }
+      }
+    }
+
     .style-guide-menu {
       flex: 0 0 20%;
-      border: 1px solid red;
+      margin: 20px auto;
+      
       nav {
-        .flex(column)
+        .flex(column);
+        background: @lightText;
+        padding: 10px;
+
+        a {
+          width: 100%;
+          padding: 20px 0;
+          color: @primaryDark;
+          text-decoration: none;
+          font-size: 1.5rem;
+          border-bottom: 1px solid @primaryBgShading;
+
+          &:visited {
+            color: @primaryDark;
+          }
+        }
       }
       
     }
 
     .style-guide-content {
-      flex: 0 0 78%;
-      border: 1px solid blue;
+      flex: 0 0 75%;
       .flex(column)
+    }
+
+    #typography {
+      .sample {
+        width: 80%;
+        padding: 10px;
+        font-size: 1.5rem;
+        border: 1px solid @primaryBgShading;
+      }
+
+    }
+
+    #color-palette {
+      .sample {
+        width: 80%;
+        padding: 20px;
+                border: 1px solid @primaryBgShading;
+      }
     }
   }
 }
