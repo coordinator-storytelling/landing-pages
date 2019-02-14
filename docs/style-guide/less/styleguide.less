@@ -1,0 +1,25 @@
+.style-guide {
+  max-width: 800px;
+  .flex(column);
+  margin: 0 auto;
+
+  .style-guide-info {
+    .flex();
+    flex-wrap: nowrap;
+
+    .style-guide-menu {
+      flex: 0 0 20%;
+      border: 1px solid red;
+      nav {
+        .flex(column)
+      }
+      
+    }
+
+    .style-guide-content {
+      flex: 0 0 78%;
+      border: 1px solid blue;
+      .flex(column)
+    }
+  }
+}
