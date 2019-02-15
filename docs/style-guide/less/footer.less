@@ -1,17 +1,38 @@
 // Footer Styles
-.page-footer {
-    width: 100%;
-    .flex(@direction: column; @align:center);
-    //bottom: 0;
-    //position: fixed;
-    padding: 10px;
-    color: @footerFontColor;
-    background: @footerBg;
+.site-footer {
+    // width: 100%;
+  .flex(@justify:space-between; @align:center);
+  // flex-wrap: nowrap;
+  //bottom: 0;
+  //position: fixed;
+  padding: 10px 30px;
+  color: @footerFontColor;
+  background: @footerBgColor;
 
-    nav {
+  .logo-wrapper {
+    .flex(@direction: column);
+  .logo {
+    a {
+      text-decoration: none;
+      font-size: 2.4rem;
+      color: @headerFontColor;
+
+      @media @phone {
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+    .copyright {
+      font-size: 1.3rem;
+    }
+  }
+
+  nav {
     .flex(@justify:space-evenly);
-    width: 100%;
     margin: 20px 0;
+
     @media @phone {
       .flex(@direction:column;@align:center);
     }
@@ -23,7 +44,10 @@
       font-weight: semi-bold;
       color: @footerFontColor;
       white-space: nowrap;
-    //   .hoverEffect(@footerBg;@footerFontColor);
+
+      &:hover {
+        text-decoration: underline;
+      }
 
       @media @phone {
         width: 95%;
@@ -35,4 +59,8 @@
 
     }
   }
+}
+
+.demo {
+    width: 800px;
 }

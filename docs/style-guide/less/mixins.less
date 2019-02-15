@@ -22,35 +22,55 @@
 .buttonColor(@fontColor,@bgColor) {
   color: @fontColor;
   background: @bgColor;
+  border: 1px solid @bgColor;
 }
 
-.buttonIcon(@width:auto; @height:auto; 
-@color; @bgColor;
-@bRadius; @paddingHeight; @paddingWidth;
-@fontSize: 1rem; @textAlign: initial; @textCase) {
+.buttonSize(@width:auto; @height:auto;@fontSize: 1rem;) {
   width: @width;
   height: @height;
+  font-size: @fontSize;
+}
+
+.buttonShape(@bRadius; @paddingHeight; @paddingWidth;) {
   padding: @paddingHeight @paddingWidth;
   border-radius: @bRadius;
-  color: @color;
-  background: @bgColor;
-  font-size: @fontSize;
-  text-align: @textAlign;
-  text-decoration: none;
-  text-transform: @textCase;
-  cursor: pointer;
+}
 
-  .hoverEffect(@color; @bgColor);
+.buttonStyle(@fontWeight:600;@textAlign:center;@decor:none;@textCase:normal;@cursor:pointer) {
+  font-weight: @fontWeight;
+  text-align: @textAlign;
+  text-decoration: @decor;
+  text-transform: @textCase;
+  letter-spacing: 0.13rem;
+  cursor: @cursor;
+  border: none;
+  transition: .2s;
+}
+
+.buttonIcon(@color;@bgColor) {
+  .buttonColor(@fontColor:@color,@bgColor:@bgColor);
+  .buttonSize(@width:auto; @height:auto;@fontSize: 1rem;);
+  .buttonShape(@bRadius; @paddingHeight; @paddingWidth;);  
+  .buttonStyle(@textAlign:center;@decor:none;@cursor:pointer);
+  //.hoverEffect(@fontColor; @bgColor);
+  .hoverEffect(@bgColor);
 }
 
 //Animations
-.hoverEffect(@fontColor; @bgColor) {
+//Version 1
+// .hoverEffect(@fontColor; @bgColor) {
+//   &:hover {
+//     color: @bgColor;
+//     background: @fontColor;
+//     // color: @fontColor;
+//     // background: @bgColor;
+//     border: 1px solid @bgColor;
+//     //transform: scale(1.15);
+//     background: lighten(@bgColor, 10%);
+//   }
+// }  
+.hoverEffect(@bgColor) {
   &:hover {
-    //color: @bgColor;
-    color: @fontColor;
-    background: @bgColor;
-    border: 1px solid @bgColor;
-    transform: scale(1.15);
-    //background: lighten(@bgColor, 10%);
+    background: lighten(@bgColor, 10%);
   }
 }

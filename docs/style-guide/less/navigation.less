@@ -3,7 +3,7 @@
   width: 100%;
   .flex(@justify:space-between; @align:center);
   color: @headerFontColor;
-  background: @headerBg;
+  background: @headerBgColor;
   padding: 10px 30px;
   // top: 0;
   // position: fixed;
@@ -11,26 +11,41 @@
   //opacity: 0.9;
 
   .logo {
-    font-size: 4.2rem;
-    color: @headerFontColor;
+    a {
+      text-decoration: none;
+      font-size: 4.2rem;
+      color: @headerFontColor;
 
-    @media @phone {
-      font-size: 4rem;
+      @media @phone {
+        font-size: 4rem;
+      }
     }
+
   }
 
   nav {
-    .flex(@justify:space-evenly);
+    .flex(@justify:space-evenly; @align:baseline);
     margin-bottom: 10px;
 
     a {
       margin: 0 1.39vw;
+      padding: 10px;
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: semi-bold;
+      letter-spacing: 0.15rem;
       color: @headerFontColor;
       white-space: nowrap;
-      //.hoverEffect(@nav-bg;@nav-font);
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        color: @headerBgColor;
+        background: @headerFontColor;
+        border-radius: 3px;
+      }
 
       @media @phone {
         margin: 0 2.78vw;
@@ -38,7 +53,63 @@
 
     }
   }
+}
 
+nav {
+  padding: 10px 0;
+  background: @headerBgColor;
+.nav-link {
+      margin: 0 1.39vw;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: semi-bold;
+      letter-spacing: 0.12rem;
+      color: @headerFontColor;
+      white-space: nowrap;
+      //.hoverEffect(@nav-bg;@nav-font);
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media @phone {
+        margin: 0 2.78vw;
+      }
+  }
+}
+
+/*******DEMO VERSION*****/
+.demo {
+  width: 800px;
+}
+
+.demo2 {
+  width: 800px;
+  background: @primaryBgShading;
+
+  .logo {
+    a {
+      color: @emphasis;
+    }
+
+  }
+
+  nav {
+    background: @primaryBgShading;
+
+    a {
+      color: @emphasis;
+
+      &:last-child {
+        color: @headerFontColor;
+        background: @accent;
+        border-radius: 3px;
+      }
+    }
+  }
 
 
 }
+
+
+

@@ -41,6 +41,50 @@ p {
   line-height: 1.4;
 }
 
+ul {
+  list-style-type: initial;
+  margin: 0 2rem;
+
+  li {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0 2rem;
+
+  li {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+}
+
+button {
+  .buttonColor(@fontColor:@lightText,@bgColor:@primaryColor);
+  .buttonSize(@width:100px; @height:auto;@fontSize:1.2rem);
+  .buttonShape(@bRadius:15px; @paddingHeight:5px; @paddingWidth:5px);  
+  .buttonStyle(@textAlign:center;@decor:none;@cursor:pointer);
+  .hoverEffect(@bgColor:@primaryColor);
+}
+
+.btn-cta {
+  .buttonColor(@fontColor:@lightText,@bgColor:@accent);
+  .hoverEffect(@bgColor:@accent);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: @defaultLinkColor;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .container {
     max-width: 991px;
     width: 100%;
