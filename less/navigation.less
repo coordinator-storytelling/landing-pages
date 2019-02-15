@@ -1,0 +1,137 @@
+// Navigation code here
+.site-header {
+  width: 100%;
+  .flex(@direction:column;@justify:center;@align:center);
+  color: @headerFontColor;
+  background: @headerBgColor;
+  padding: 10px 30px;
+  // top: 0;
+  // position: fixed;
+  z-index: 2;
+  //opacity: 0.9;
+
+  @media @desktop {
+    .flex(@justify:space-between; @align:center);
+  }  
+
+  .logo {
+    a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: @headerFontColor;
+
+      @media @desktop {
+        font-size: 4.2rem;
+        
+      }
+    }
+
+  }
+
+  nav {
+    .flex(@direction:column;@justify:center;@align:center);
+    margin-bottom: 10px;
+
+    @media @desktop {
+      .flex(@justify:space-evenly; @align:baseline);
+    }
+
+    a {
+      width: 100%;
+      margin: 0 2.78vw;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: semi-bold;
+      letter-spacing: 0.15rem;
+      color: @headerFontColor;
+      white-space: nowrap;
+      border-bottom: 0.5px solid @primaryColor;
+
+      @media @desktop {
+        width: auto;
+        margin: 0 1.39vw;
+        border-bottom: initial;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:last-child {
+        color: @headerBgColor;
+        background: @headerFontColor;
+        border-radius: 3px;
+      }
+
+    }
+  }
+}
+
+nav {
+  padding: 10px 0;
+  background: @headerBgColor;
+.nav-link {
+      margin: 0 2.78vw;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: semi-bold;
+      letter-spacing: 0.12rem;
+      color: @headerFontColor;
+      white-space: nowrap;
+      //.hoverEffect(@nav-bg;@nav-font);
+
+      @media @desktop {
+        margin: 0 1.39vw;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+  }
+}
+
+/*******DEMO VERSION*****/
+.demo {
+  max-width: 500px;
+  @media @desktop {
+    max-width: 800px;
+  }
+  
+}
+
+.demo2 {
+ max-width: 500px;
+  background: @primaryBgShading;
+
+  @media @desktop {
+    max-width: 800px;
+  }
+
+  .logo {
+    a {
+      color: @emphasis;
+    }
+
+  }
+
+  nav {
+    background: @primaryBgShading;
+
+    a {
+      color: @emphasis;
+
+      &:last-child {
+        color: @headerFontColor;
+        background: @accent;
+        border-radius: 3px;
+      }
+    }
+  }
+
+
+}
+
+
+

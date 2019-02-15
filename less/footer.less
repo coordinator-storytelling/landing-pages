@@ -1,0 +1,66 @@
+// Footer Styles
+.site-footer {
+    // width: 100%;
+  .flex(@justify:space-between; @align:center);
+  // flex-wrap: nowrap;
+  //bottom: 0;
+  //position: fixed;
+  padding: 10px 30px;
+  color: @footerFontColor;
+  background: @footerBgColor;
+
+  .logo-wrapper {
+    .flex(@direction: column);
+  .logo {
+    a {
+      text-decoration: none;
+      font-size: 2.4rem;
+      color: @headerFontColor;
+
+      @media @phone {
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+    .copyright {
+      font-size: 1.3rem;
+    }
+  }
+
+  nav {
+    .flex(@justify:space-evenly);
+    margin: 20px 0;
+
+    @media @phone {
+      .flex(@direction:column;@align:center);
+    }
+
+    a {
+      margin: 0 1.39vw;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: semi-bold;
+      color: @footerFontColor;
+      white-space: nowrap;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media @phone {
+        width: 95%;
+        padding: 20px 0;
+        margin: 0 2.78vw;
+        text-align: center;
+        //border-bottom: 1px solid @main-border-color;
+      }
+
+    }
+  }
+}
+
+.demo {
+    width: 800px;
+}
