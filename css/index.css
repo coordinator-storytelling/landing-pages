@@ -357,7 +357,7 @@ button:hover {
   align-items: stretch;
   color: #FFFFFF;
   background: #1363A8;
-  padding: 0;
+  padding-top: 15px;
   z-index: 2;
 }
 @media (min-width: 768px) {
@@ -380,12 +380,12 @@ button:hover {
 }
 .site-header .logo a {
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 2.8rem;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .site-header .logo a {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 }
 .site-header nav {
@@ -423,9 +423,11 @@ button:hover {
     border-bottom: initial;
   }
 }
-.site-header nav a:hover {
-  color: #1363A8;
-  background: #FFFFFF;
+@media phone {
+  .site-header nav a:hover {
+    color: #1363A8;
+    background: #FFFFFF;
+  }
 }
 @media (min-width: 768px) {
   .site-header nav a:hover {
@@ -446,9 +448,11 @@ button:hover {
   border-radius: 3px;
   margin-bottom: 0;
 }
-.site-header nav a:last-child:hover {
-  color: #FFFFFF;
-  background: #1363A8;
+@media phone {
+  .site-header nav a:last-child:hover {
+    color: #1363A8;
+    background: #FFFFFF;
+  }
 }
 nav {
   padding: 10px 0;
@@ -533,6 +537,7 @@ nav .nav-link:hover {
   align-items: center;
 }
 .site-footer .logo-wrapper .logo a {
+  padding-bottom: 20px;
   text-decoration: none;
   font-size: 2rem;
   color: #FFFFFF;
