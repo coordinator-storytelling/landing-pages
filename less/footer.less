@@ -1,24 +1,32 @@
 // Footer Styles
 .site-footer {
-    // width: 100%;
-  .flex(@justify:space-between; @align:center);
+  width: 100%;
+  .flex(@direction:column-reverse;@justify:center;@align:center);
   // flex-wrap: nowrap;
-  //bottom: 0;
-  //position: fixed;
-  padding: 10px 30px;
+  bottom: 0;
+  position: fixed;
+  padding: 0;
+  padding-bottom: 20px;
   color: @footerFontColor;
   background: @footerBgColor;
 
+  @media @desktop {
+    .flex(@justify:space-between; @align:center);
+    padding: 10px 30px;
+  }
+
   .logo-wrapper {
-    .flex(@direction: column);
+    .flex(@direction:column;@align:center);
+    
   .logo {
     a {
       text-decoration: none;
-      font-size: 2.4rem;
+
+      font-size: 2rem;
       color: @headerFontColor;
 
-      @media @phone {
-        font-size: 2rem;
+      @media @desktop {
+        font-size: 2.4rem;
       }
     }
 
@@ -30,15 +38,17 @@
   }
 
   nav {
-    .flex(@justify:space-evenly);
-    margin: 20px 0;
-
-    @media @phone {
-      .flex(@direction:column;@align:center);
+    .flex();
+    @media @desktop {
+      //.flex(@direction:column;@align:center);
+      margin: 20px 0;
     }
 
     a {
-      margin: 0 1.39vw;
+      width: 95%;
+      margin: 0 2.78vw;
+      padding: 20px 0;
+      text-align: center;
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: semi-bold;
@@ -49,12 +59,8 @@
         text-decoration: underline;
       }
 
-      @media @phone {
-        width: 95%;
-        padding: 20px 0;
-        margin: 0 2.78vw;
-        text-align: center;
-        //border-bottom: 1px solid @main-border-color;
+      @media @desktop {
+        margin: 0 1.39vw;
       }
 
     }

@@ -373,6 +373,11 @@ button:hover {
   width: 100%;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .site-header .logo {
+    width: auto;
+  }
+}
 .site-header .logo a {
   text-decoration: none;
   font-size: 4rem;
@@ -380,8 +385,6 @@ button:hover {
 }
 @media (min-width: 768px) {
   .site-header .logo a {
-    width: initial;
-    text-align: initial;
     font-size: 4.2rem;
   }
 }
@@ -431,6 +434,11 @@ button:hover {
 }
 .site-header nav a:first-child {
   border-top: 1px solid #0F5080;
+}
+@media (min-width: 768px) {
+  .site-header nav a:first-child {
+    border: none;
+  }
 }
 .site-header nav a:last-child {
   color: #1363A8;
@@ -497,28 +505,41 @@ nav .nav-link:hover {
   border-radius: 3px;
 }
 .site-footer {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
-  padding: 10px 30px;
+  bottom: 0;
+  position: fixed;
+  padding: 0;
+  padding-bottom: 20px;
   color: #FFFFFF;
   background: #1363A8;
+}
+@media (min-width: 768px) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
 }
 .site-footer .logo-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: normal;
+  align-items: center;
 }
 .site-footer .logo-wrapper .logo a {
   text-decoration: none;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #FFFFFF;
 }
-@media (max-width: 500px) {
+@media (min-width: 768px) {
   .site-footer .logo-wrapper .logo a {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 .site-footer .logo-wrapper .copyright {
@@ -527,20 +548,19 @@ nav .nav-link:hover {
 .site-footer nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: normal;
   align-items: normal;
-  margin: 20px 0;
 }
-@media (max-width: 500px) {
+@media (min-width: 768px) {
   .site-footer nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    align-items: center;
+    margin: 20px 0;
   }
 }
 .site-footer nav a {
-  margin: 0 1.39vw;
+  width: 95%;
+  margin: 0 2.78vw;
+  padding: 20px 0;
+  text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: semi-bold;
@@ -550,12 +570,9 @@ nav .nav-link:hover {
 .site-footer nav a:hover {
   text-decoration: underline;
 }
-@media (max-width: 500px) {
+@media (min-width: 768px) {
   .site-footer nav a {
-    width: 95%;
-    padding: 20px 0;
-    margin: 0 2.78vw;
-    text-align: center;
+    margin: 0 1.39vw;
   }
 }
 .demo {
