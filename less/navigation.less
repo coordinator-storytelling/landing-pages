@@ -4,7 +4,7 @@
   .flex(@direction:column;@justify:center;@align:stretch);
   color: @headerFontColor;
   background: @headerBgColor;
-  padding: 0;
+  padding-top: 15px;
   // top: 0;
   // position: fixed;
   z-index: 2;
@@ -26,11 +26,11 @@
     a {
       //text-align: center;
       text-decoration: none;
-      font-size: 4rem;
+      font-size: 2.8rem;
       color: @headerFontColor;
       
       @media @desktop {
-        font-size: 4.2rem;
+        font-size: 4rem;
       }
     }
 
@@ -64,8 +64,10 @@
       }
 
       &:hover {
-        color: @headerBgColor;
-        background: @headerFontColor;
+        @media phone {
+          color: @headerBgColor;
+          background: @headerFontColor;
+        }
 
         @media @desktop {
           text-decoration: underline;
@@ -86,8 +88,10 @@
         margin-bottom: 0;
 
         &:hover {
-          color: @headerFontColor;
-          background: @headerBgColor;
+          @media phone {
+            color: @headerBgColor;
+            background: @headerFontColor;
+          }
         }
       }
 
