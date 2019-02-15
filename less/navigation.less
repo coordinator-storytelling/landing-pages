@@ -1,10 +1,10 @@
 // Navigation code here
 .site-header {
   width: 100%;
-  .flex(@direction:column;@justify:center;@align:center);
+  .flex(@direction:column;@justify:center;@align:stretch);
   color: @headerFontColor;
   background: @headerBgColor;
-  padding: 10px 30px;
+  padding: 0;
   // top: 0;
   // position: fixed;
   z-index: 2;
@@ -12,15 +12,22 @@
 
   @media @desktop {
     .flex(@justify:space-between; @align:center);
+    padding: 10px 30px;
   }  
 
   .logo {
+    width: 100%;
+    text-align: center;
     a {
+      //text-align: center;
       text-decoration: none;
       font-size: 4rem;
       color: @headerFontColor;
+      
 
       @media @desktop {
+        width: initial;
+        text-align: initial;
         font-size: 4.2rem;
         
       }
@@ -30,10 +37,11 @@
 
   nav {
     .flex(@direction:column;@justify:center;@align:center);
-    margin-bottom: 10px;
+    
 
     @media @desktop {
       .flex(@justify:space-evenly; @align:baseline);
+      margin-bottom: 10px;
     }
 
     a {
@@ -47,7 +55,8 @@
       letter-spacing: 0.15rem;
       color: @headerFontColor;
       white-space: nowrap;
-      border-bottom: 0.5px solid @primaryColor;
+      border-bottom: 1px solid @primaryDark;
+      //border: 2px solid pink;
 
       @media @desktop {
         width: auto;
@@ -56,13 +65,28 @@
       }
 
       &:hover {
-        text-decoration: underline;
+        color: @headerBgColor;
+        background: @headerFontColor;
+
+        @media @desktop {
+          text-decoration: underline;
+        }
+      }
+
+      &:first-child {
+        border-top: 1px solid @primaryDark;
       }
 
       &:last-child {
         color: @headerBgColor;
         background: @headerFontColor;
         border-radius: 3px;
+        margin-bottom: 0;
+
+        &:hover {
+          color: @headerFontColor;
+          background: @headerBgColor;
+        }
       }
 
     }
@@ -71,6 +95,7 @@
 
 nav {
   padding: 10px 0;
+  padding-bottom: 0;
   background: @headerBgColor;
 .nav-link {
       margin: 0 2.78vw;
