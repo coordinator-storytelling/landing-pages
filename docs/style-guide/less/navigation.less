@@ -1,7 +1,7 @@
 // Navigation code here
 .site-header {
   width: 100%;
-  .flex(@justify:space-between; @align:center);
+  .flex(@direction:column;@justify:center;@align:center);
   color: @headerFontColor;
   background: @headerBgColor;
   padding: 10px 30px;
@@ -10,32 +10,50 @@
   z-index: 2;
   //opacity: 0.9;
 
+  @media @desktop {
+    .flex(@justify:space-between; @align:center);
+  }  
+
   .logo {
     a {
       text-decoration: none;
-      font-size: 4.2rem;
+      font-size: 4rem;
       color: @headerFontColor;
 
-      @media @phone {
-        font-size: 4rem;
+      @media @desktop {
+        font-size: 4.2rem;
+        
       }
     }
 
   }
 
   nav {
-    .flex(@justify:space-evenly; @align:baseline);
+    .flex(@direction:column;@justify:center;@align:center);
     margin-bottom: 10px;
 
+    @media @desktop {
+      .flex(@justify:space-evenly; @align:baseline);
+    }
+
     a {
-      margin: 0 1.39vw;
+      width: 100%;
+      margin: 0 2.78vw;
       padding: 10px;
+      text-align: center;
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: semi-bold;
       letter-spacing: 0.15rem;
       color: @headerFontColor;
       white-space: nowrap;
+      border-bottom: 0.5px solid @primaryColor;
+
+      @media @desktop {
+        width: auto;
+        margin: 0 1.39vw;
+        border-bottom: initial;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -47,10 +65,6 @@
         border-radius: 3px;
       }
 
-      @media @phone {
-        margin: 0 2.78vw;
-      }
-
     }
   }
 }
@@ -59,7 +73,7 @@ nav {
   padding: 10px 0;
   background: @headerBgColor;
 .nav-link {
-      margin: 0 1.39vw;
+      margin: 0 2.78vw;
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: semi-bold;
@@ -68,24 +82,32 @@ nav {
       white-space: nowrap;
       //.hoverEffect(@nav-bg;@nav-font);
 
-      &:hover {
-        text-decoration: underline;
+      @media @desktop {
+        margin: 0 1.39vw;
       }
 
-      @media @phone {
-        margin: 0 2.78vw;
+      &:hover {
+        text-decoration: underline;
       }
   }
 }
 
 /*******DEMO VERSION*****/
 .demo {
-  width: 800px;
+  max-width: 500px;
+  @media @desktop {
+    max-width: 800px;
+  }
+  
 }
 
 .demo2 {
-  width: 800px;
+ max-width: 500px;
   background: @primaryBgShading;
+
+  @media @desktop {
+    max-width: 800px;
+  }
 
   .logo {
     a {
