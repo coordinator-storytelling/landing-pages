@@ -1,83 +1,50 @@
-// Home Content
-.home {
-  margin: 20px auto;
-  padding: 10px 50px;
+.home-page {
+  .flex(@direction:column;@align:center);
 
-  & * h2 {
-    margin: 5px 0;
-  }
+  .intro {
+    .flex(@direction:column;@align:center);
+    //margin-bottom: 20px;
+    padding: 30px 3%;
+    color: @lightText;
+    background-image: url(/img/main-header.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  & * p {
-      padding: 5px 0;
-  }
-
-  .banner {
-    margin-top: 10px;
-    margin-bottom: 50px;
-
-    .hero-image-wrapper {
-
-      img {
-        width: 100%;
-        height: auto;
-
-        @media @phone {
-          border-radius: 5px;
-        }
-
-      }
-
-      @media @phone {
-        height: 30%;
-      }
+    .headline {
+      color: @lightText;
     }
   }
 
-  .introduction {
-    display: flex;
-    padding-top: 20px;
-    border-top: 2px solid @primary-dark;
+  .features {
+    width: 94%;
+    .flex(@direction:column;@align:center);
+    margin: 30px auto;
+    //padding: 30px 3%;
+
+    .features-column {
+      margin: 10px auto;
+    }
+
   }
 
-  .introduction .intro-column {
-    flex: 0 0 48%;
-  }
-
-  .introduction .intro-column:first-child {
-    margin-left: 0;
-  } 
-
-  .middle-image-wrapper {
+  .testimonials {
+    width: 94%;
+    .flex(@direction:column;@align:center);
     margin: 20px auto;
   }
 
-  .product-and-services {
-    display: flex;
-    margin: 30px 0;
-    padding-top: 20px;
-    border-bottom: 2px solid @primary-dark;
+  .inverse-content {
+    flex-direction: column-reverse;
   }
 
-  .product-and-services .p-and-s-column {
-    flex: 0 0 33%;
-  }
+  .content-pick {
+    width: 94%;
+    .flex(@direction:column;@align:center);
+    margin: 20px auto;
 
-  .contact-info {
-    margin: 20px 0;
-
-    address {
-      font-size: 1.8rem;
-      line-height: 1;
-
-      a {
-        color: black;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+    .destination {
+      margin: 10px auto;
     }
   }
-
-} 
+}

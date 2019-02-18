@@ -331,6 +331,10 @@ button:hover {
     font-size: 1.2rem;
   }
 }
+img {
+  width: 100%;
+  height: auto;
+}
 .container {
   max-width: 500px;
   width: 100%;
@@ -582,6 +586,60 @@ nav .nav-link:hover {
 }
 .demo {
   width: 800px;
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.home-page .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  padding: 30px 3%;
+  color: #FFFFFF;
+  background-image: url(/img/main-header.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-page .intro .headline {
+  color: #FFFFFF;
+}
+.home-page .features {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  margin: 30px auto;
+}
+.home-page .features .features-column {
+  margin: 10px auto;
+}
+.home-page .testimonials {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  margin: 20px auto;
+}
+.home-page .inverse-content {
+  flex-direction: column-reverse;
+}
+.home-page .content-pick {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  margin: 20px auto;
+}
+.home-page .content-pick .destination {
+  margin: 10px auto;
 }
 .headline {
   max-width: 991px;
