@@ -4,23 +4,24 @@
   .flex(@direction:column-reverse;@justify:center;@align:center);
   // flex-wrap: nowrap;
   bottom: 0;
-  //position: fixed;
-  padding: 0;
+  margin-top: 20px;
   padding-bottom: 20px;
   color: @footerFontColor;
   background: @footerBgColor;
 
   @media @desktop {
     .flex(@justify:space-between; @align:center);
-    padding: 10px 30px;
+    padding: 10px 5%;
   }
 
   .logo-wrapper {
     .flex(@direction:column;@align:center);
+    & * {
+      margin: 5px auto;
+    }
     
   .logo {
     a {
-      padding-bottom: 20px;
       text-decoration: none;
       font-size: 2rem;
       color: @headerFontColor;
@@ -39,15 +40,10 @@
 
   nav {
     .flex();
-    @media @desktop {
-      //.flex(@direction:column;@align:center);
-      margin: 20px 0;
-    }
 
     a {
       width: 95%;
-      margin: 0 2.78vw;
-      padding: 20px 0;
+      margin: 10px 2.78vw;
       text-align: center;
       text-decoration: none;
       font-size: 1.5rem;
