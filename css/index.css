@@ -216,6 +216,9 @@ html {
 body * {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
 }
+body {
+  background: #F5F8FA;
+}
 h1,
 h2,
 h3,
@@ -514,7 +517,7 @@ nav .nav-link:hover {
 }
 .demo2 {
   max-width: 500px;
-  background: #D1DAE5;
+  background: #F5F8FA;
 }
 @media (min-width: 768px) {
   .demo2 {
@@ -525,7 +528,7 @@ nav .nav-link:hover {
   color: #03100D;
 }
 .demo2 nav {
-  background: #D1DAE5;
+  background: #F5F8FA;
 }
 .demo2 nav a {
   color: #03100D;
@@ -691,8 +694,9 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
   padding: 20px;
-  border: 1px solid black;
   font-size: 1rem;
+  background: #FFFFFF;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 @media (min-width: 768px) {
   .home-page .features-list .feature {
