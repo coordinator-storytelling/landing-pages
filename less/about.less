@@ -1,19 +1,41 @@
 
-.team-list {
+.about-intro {
+  width: 90%;
+  margin: 20px auto;
+  .about-headline {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+}
 
-
-  .team-member {
-    border: 1px solid red;
-    .flex(@direction:column;@align:center);
-
-    .team-member-img-wrapper {
-      width: 30%;
+.team {
+  margin: 20px 0;
+  .flex(@direction:column;@align:center);
+  .team-list {
+    @media @desktop {
+      .flex();
     }
+    .team-member {
+      //border: 1px solid red;
+      .flex(@direction:column;@align:center);
 
-    .team-member-name {
-      font-size: 1.8rem;
-      font-weight: bold;
+      //padding: 10px;
+      margin: 10px 0;
+
+      @media @desktop {
+        width: 48%;
+      }
+
+      .team-member-img-wrapper {
+        width: 30%;
+      }
+
+      .team-member-name {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
     }
   }
 }
+
 
