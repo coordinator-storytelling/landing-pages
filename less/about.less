@@ -1,70 +1,81 @@
 
-.about-intro {
-  width: 90%;
-  margin: 20px auto;
-  .about-headline {
-    text-align: center;
-    font-size: 2.8rem;
+.about-page {
+  margin-top: 60px;
 
-    @media @desktop {
-      margin: 30px auto;
-      text-align: left;
-      font-size: 3.2rem;
+  @media @desktop {
+    margin-top: 80px;
+  }
+
+  .about-intro {
+    width: 90%;
+    margin: 20px auto;
+    .about-headline {
+      margin: 10px auto;
+      text-align: center;
+      font-size: 2.8rem;
+      //border: 1px solid red;
+      @media @desktop {
+        text-align: left;
+        font-size: 3.2rem;
+       
+      }
     }
   }
-}
 
 .team {
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
 
-  & * {
-    margin: 2.5px 0;
-  }
-
-  .flex(@direction:column;@align:center);
-  @media @desktop {
-    border-top: 1px solid @primaryDark;
-  }
-
-  .team-list {
-    @media @desktop {
-      .flex(@justify:space-evenly;@align:center);
+    & * {
+      margin: 2.5px 0;
     }
-    .team-member {
-      .flex(@direction:column;@align:center);
-      margin: 10px 0;
 
-      .team-member-img-wrapper {
-        width: 30%;
-      }
+    .flex(@direction:column;@align:center);
+    @media @desktop {
+      border-top: 1px solid @primaryDark;
+    }
 
-      .team-member-name {
-        font-size: 1.6rem;
-        font-weight: bold;
-      }
-
-      .team-member-role {
-        font-size: 1.4rem;
-      }
-
-      .team-member-contact {
-         max-width: 300px;
-         width: 50%;
+    .team-list {
+      @media @desktop {
         .flex(@justify:space-evenly;@align:center);
+      }
+      .team-member {
+        .flex(@direction:column;@align:center);
+        margin: 10px 0;
 
-        a, a:visited {
-          color: @primaryDark;
-          font-size: 2rem; 
+        .team-member-img-wrapper {
+          width: 30%;
+        }
 
-          @media @desktop {
-            font-size: 1.8rem;
+        .team-member-name {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+
+        .team-member-role {
+          font-size: 1.4rem;
+        }
+
+        .team-member-contact {
+          max-width: 300px;
+          width: 50%;
+          .flex(@justify:space-evenly;@align:center);
+
+          a, a:visited {
+            color: @primaryDark;
+            font-size: 2rem; 
+
+            @media @desktop {
+              font-size: 1.8rem;
+            }
           }
         }
       }
     }
-  }
+  }  
 }
+
+
 
 
