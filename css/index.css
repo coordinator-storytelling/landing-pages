@@ -463,18 +463,16 @@ img {
     background: #FFFFFF;
   }
 }
-.site-header #smallNav {
+.site-header #openMenu {
   font-size: 2.5rem;
-  font-weight: bold;
 }
 @media (min-width: 768px) {
-  .site-header #smallNav {
+  .site-header #openMenu {
     display: none;
   }
 }
 .site-header #closeMenu {
   font-size: 2.5rem;
-  font-weight: bold;
   display: none;
 }
 nav {
