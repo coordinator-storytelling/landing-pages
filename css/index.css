@@ -698,6 +698,20 @@ nav .nav-link:hover {
     width: 28%;
   }
 }
+.team-list .team-member {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.team-list .team-member .team-member-img-wrapper {
+  width: 30%;
+}
+.team-list .team-member .team-member-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 .headline {
   max-width: 991px;
   margin: 20px auto;
