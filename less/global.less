@@ -115,17 +115,18 @@ img {
 }
 
 .container {
-    max-width: 500px;
+    //max-width: 500px;
     width: 100%;
     margin: 0 auto;
 
     @media @desktop {
-      max-width: 991px;
+      //max-width: 991px;
     }
 }
 
 .btn-cta {
   .buttonColor(@fontColor:@lightText,@bgColor:@accent);
+  .buttonStyle(@fontWeight:900);
   .hoverEffect(@bgColor:@accent);
 }
 
