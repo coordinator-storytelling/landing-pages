@@ -754,6 +754,18 @@ nav .nav-link:hover {
 .home-page .testimonials .img-content-wrapper img {
   border-radius: 10px;
 }
+.home-page .testimonials blockquote {
+  font-size: 5rem;
+}
+.home-page .testimonials blockquote:before,
+.home-page .testimonials blockquote:after {
+  content: '\201C';
+  font-family: 'Sanchez';
+  color: #8c8c8c;
+}
+.home-page .testimonials blockquote:after {
+  content: '\201D';
+}
 .home-page .inverse-content {
   flex-direction: column-reverse;
 }

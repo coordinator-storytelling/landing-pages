@@ -132,6 +132,19 @@
       }
     }
 
+    blockquote {
+      font-size: 5rem;
+
+      &:before, &:after {
+          content: '\201C';
+          font-family: 'Sanchez';
+          color: lighten(@darkText, 20%);
+      }
+      &:after {
+          content: '\201D';
+      }
+    }
+
   }
 
   .inverse-content {
