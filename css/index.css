@@ -764,12 +764,14 @@ nav .nav-link:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-.team .team-list .team-member .team-member-contact a {
+.team .team-list .team-member .team-member-contact a,
+.team .team-list .team-member .team-member-contact a:visited {
   color: #0F5080;
   font-size: 2rem;
 }
 @media (min-width: 768px) {
-  .team .team-list .team-member .team-member-contact a {
+  .team .team-list .team-member .team-member-contact a,
+  .team .team-list .team-member .team-member-contact a:visited {
     font-size: 1.8rem;
   }
 }

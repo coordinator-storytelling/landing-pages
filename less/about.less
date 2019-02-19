@@ -18,26 +18,21 @@
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
-  //margin: 20px 0;
-  //border: 1px solid blue;
 
   & * {
     margin: 2.5px 0;
   }
 
   .flex(@direction:column;@align:center);
-  //margin: 50px 0;
   @media @desktop {
     border-top: 1px solid @primaryDark;
   }
 
   .team-list {
-    //border: 1px solid cyan;
     @media @desktop {
       .flex(@justify:space-evenly;@align:center);
     }
     .team-member {
-      //border: 1px solid magenta;
       .flex(@direction:column;@align:center);
       margin: 10px 0;
 
@@ -59,11 +54,7 @@
          width: 50%;
         .flex(@justify:space-evenly;@align:center);
 
-        // @media @desktop {
-        //   width: 50%;
-        // }
-        //border: 1px solid cyan;
-        a {
+        a, a:visited {
           color: @primaryDark;
           font-size: 2rem; 
 
