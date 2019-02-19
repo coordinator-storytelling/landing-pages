@@ -831,6 +831,8 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
   margin: 10px 0;
+  background: #FFFFFF;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 .about-page .team .team-list .team-member .team-member-img-wrapper {
   width: 30%;
