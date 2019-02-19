@@ -1,23 +1,24 @@
 // Navigation code here
 .site-header {
   width: 100%;
-  .flex(@direction:column;@justify:center;@align:stretch);
+  .flex(@direction:column;@justify:center);
+  padding: 0 5%;
   color: @headerFontColor;
   background: @headerBgColor;
-  padding-top: 15px;
+  //padding-top: 15px;
   // top: 0;
   // position: fixed;
   z-index: 2;
   //opacity: 0.9;
 
   @media @desktop {
-    .flex(@direction:row;@justify:space-between; @align:center);
-    padding: 10px 5%;
+    .flex(@direction:row;@justify:space-between;@align:center);
   }  
 
   .logo {
     width: 100%;
-    text-align: center;
+    padding: 10px 0;
+    .flex(@justify:space-between;@align:center);
 
     @media @desktop {
       width: auto;
@@ -36,8 +37,9 @@
 
   }
 
-  nav {
+  .mainNav {
     .flex(@direction:column;@justify:center;@align:center);
+    display: none;
     
     @media @desktop {
       .flex(@justify:space-evenly; @align:baseline);
@@ -96,6 +98,21 @@
       }
 
     }
+  }
+
+  #smallNav {
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    @media @desktop {
+      display: none;
+    }
+  }
+
+  #closeMenu {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: none;
   }
 }
 

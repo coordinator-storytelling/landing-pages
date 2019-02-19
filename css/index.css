@@ -359,10 +359,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: normal;
+  padding: 0 5%;
   color: #FFFFFF;
   background: #1363A8;
-  padding-top: 15px;
   z-index: 2;
 }
 @media (min-width: 768px) {
@@ -371,12 +371,15 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
   }
 }
 .site-header .logo {
   width: 100%;
-  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .site-header .logo {
@@ -393,14 +396,15 @@ img {
     font-size: 4rem;
   }
 }
-.site-header nav {
+.site-header .mainNav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 @media (min-width: 768px) {
-  .site-header nav {
+  .site-header .mainNav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -408,7 +412,7 @@ img {
     margin-bottom: 10px;
   }
 }
-.site-header nav a {
+.site-header .mainNav a {
   width: 100%;
   margin: 0 2.78vw;
   padding: 10px;
@@ -422,42 +426,56 @@ img {
   border-bottom: 1px solid #0F5080;
 }
 @media (min-width: 768px) {
-  .site-header nav a {
+  .site-header .mainNav a {
     width: auto;
     margin: 0 1.39vw;
     border-bottom: initial;
   }
 }
 @media phone {
-  .site-header nav a:hover {
+  .site-header .mainNav a:hover {
     color: #1363A8;
     background: #FFFFFF;
   }
 }
 @media (min-width: 768px) {
-  .site-header nav a:hover {
+  .site-header .mainNav a:hover {
     text-decoration: underline;
   }
 }
-.site-header nav a:first-child {
+.site-header .mainNav a:first-child {
   border-top: 1px solid #0F5080;
 }
 @media (min-width: 768px) {
-  .site-header nav a:first-child {
+  .site-header .mainNav a:first-child {
     border: none;
   }
 }
-.site-header nav a:last-child {
+.site-header .mainNav a:last-child {
   color: #1363A8;
   background: #FFFFFF;
   border-radius: 3px;
   margin-bottom: 0;
 }
 @media phone {
-  .site-header nav a:last-child:hover {
+  .site-header .mainNav a:last-child:hover {
     color: #1363A8;
     background: #FFFFFF;
   }
+}
+.site-header #smallNav {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .site-header #smallNav {
+    display: none;
+  }
+}
+.site-header #closeMenu {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: none;
 }
 nav {
   padding: 10px 0;
