@@ -231,7 +231,7 @@ h1 {
   font-size: 2.8rem;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   h1 {
     font-size: 3.6rem;
   }
@@ -240,7 +240,7 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   h2 {
     font-size: 2.4rem;
   }
@@ -249,7 +249,7 @@ h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   h3 {
     font-size: 2rem;
   }
@@ -258,7 +258,7 @@ h4 {
   font-size: 1.52rem;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   h4 {
     font-size: 1.8rem;
   }
@@ -267,7 +267,7 @@ p {
   font-size: 1.3rem;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   p {
     font-size: 1.6rem;
   }
@@ -281,7 +281,7 @@ ol li {
   font-size: 1.32rem;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   ul li,
   ol li {
     font-size: 1.6rem;
@@ -299,7 +299,7 @@ a {
   font-weight: 600;
   color: #4195D2;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   a {
     font-size: 1.6rem;
   }
@@ -328,7 +328,7 @@ button {
 button:hover {
   background: #187ed6;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   button {
     width: 100px;
     height: auto;
@@ -343,7 +343,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .container {
     max-width: 1430px;
   }
@@ -386,7 +386,7 @@ img {
   justify-content: center;
   align-items: normal;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper {
     width: 100%;
     display: flex;
@@ -404,7 +404,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper .logo {
     width: auto;
   }
@@ -414,7 +414,7 @@ img {
   font-size: 2.8rem;
   color: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper .logo a {
     font-size: 4rem;
   }
@@ -426,7 +426,7 @@ img {
   align-items: center;
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper .mainNav {
     display: flex;
     flex-direction: row;
@@ -448,7 +448,7 @@ img {
   white-space: nowrap;
   border-bottom: 1px solid #0F5080;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper .mainNav a {
     width: auto;
     margin: 0 1.39vw;
@@ -461,7 +461,7 @@ img {
     background: #FFFFFF;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper .mainNav a:hover {
     text-decoration: underline;
   }
@@ -469,7 +469,7 @@ img {
 .site-header .site-header-wrapper .mainNav a:first-child {
   border-top: 1px solid #0F5080;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper .mainNav a:first-child {
     border: none;
   }
@@ -489,7 +489,7 @@ img {
 .site-header .site-header-wrapper #openMenu {
   font-size: 2.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-header .site-header-wrapper #openMenu {
     display: none;
   }
@@ -512,7 +512,7 @@ nav .nav-link {
   color: #FFFFFF;
   white-space: nowrap;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   nav .nav-link {
     margin: 0 1.39vw;
   }
@@ -524,7 +524,7 @@ nav .nav-link:hover {
 .demo {
   max-width: 500px;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .demo {
     max-width: 800px;
   }
@@ -533,7 +533,7 @@ nav .nav-link:hover {
   max-width: 500px;
   background: #F5F8FA;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .demo2 {
     max-width: 800px;
   }
@@ -574,7 +574,7 @@ nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-footer .site-footer-wrapper {
     width: 100%;
     display: flex;
@@ -597,7 +597,7 @@ nav .nav-link:hover {
   font-size: 2rem;
   color: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-footer .site-footer-wrapper .logo-wrapper .logo a {
     font-size: 2.4rem;
   }
@@ -624,7 +624,7 @@ nav .nav-link:hover {
 .site-footer .site-footer-wrapper nav a:hover {
   text-decoration: underline;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .site-footer .site-footer-wrapper nav a {
     margin: 0 1.39vw;
   }
@@ -640,7 +640,7 @@ nav .nav-link:hover {
   margin-top: 40px;
   margin-bottom: 150px;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page {
     margin-top: 60px;
     margin-bottom: 100px;
@@ -659,7 +659,7 @@ nav .nav-link:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .intro {
     padding-top: 150px;
     padding-bottom: 250px;
@@ -677,7 +677,7 @@ nav .nav-link:hover {
 .home-page .intro .intro-wrapper * {
   margin: 10px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .intro .intro-wrapper {
     width: 100%;
   }
@@ -688,12 +688,12 @@ nav .nav-link:hover {
   width: 100%;
   color: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .intro .intro-wrapper .headline {
     font-size: 6.4rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .intro .intro-wrapper .tagline {
     font-size: 2rem;
   }
@@ -705,7 +705,7 @@ nav .nav-link:hover {
   color: #1363A8;
   background: #FFFFFF;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .intro .intro-wrapper button {
     align-self: flex-start;
     font-size: 2.5rem;
@@ -721,7 +721,7 @@ nav .nav-link:hover {
   align-items: center;
   margin: 20px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .features-list {
     width: 100%;
     display: flex;
@@ -745,7 +745,7 @@ nav .nav-link:hover {
   background: #FFFFFF;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 }
 .home-page .features-list .feature * {
   margin: 5px 0;
@@ -773,7 +773,7 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .testimonials {
     display: flex;
     flex-direction: row;
@@ -785,7 +785,7 @@ nav .nav-link:hover {
 .home-page .testimonials * {
   margin: 5px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .testimonials .img-content-wrapper,
   .home-page .testimonials .text-content {
     width: 48%;
@@ -794,7 +794,7 @@ nav .nav-link:hover {
 .home-page .testimonials .img-content-wrapper {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .testimonials .img-content-wrapper {
     width: 40%;
   }
@@ -817,7 +817,7 @@ nav .nav-link:hover {
 .home-page .inverse-content {
   flex-direction: column-reverse;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home-page .inverse-content {
     display: flex;
     flex-direction: row;
@@ -829,7 +829,7 @@ nav .nav-link:hover {
   margin-top: 60px;
   margin-bottom: 150px;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .about-page {
     margin-top: 80px;
   }
@@ -843,7 +843,7 @@ nav .nav-link:hover {
   text-align: center;
   font-size: 2.8rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .about-page .about-intro .about-headline {
     text-align: left;
     font-size: 3.2rem;
@@ -861,12 +861,12 @@ nav .nav-link:hover {
 .about-page .team * {
   margin: 2.5px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .about-page .team {
     border-top: 1px solid #0F5080;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .about-page .team .team-list {
     display: flex;
     flex-direction: row;
@@ -906,7 +906,7 @@ nav .nav-link:hover {
   color: #0F5080;
   font-size: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .about-page .team .team-list .team-member .team-member-contact a,
   .about-page .team .team-list .team-member .team-member-contact a:visited {
     font-size: 1.8rem;
