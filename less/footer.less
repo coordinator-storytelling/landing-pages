@@ -2,13 +2,17 @@
 .site-footer {
   width: 100%;
   max-width: 1430px;
-  margin: 0 auto;
   .flex(@direction:column;@align:center);
   bottom: 0;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 20px;  
+  padding: 5px 0;
   color: @footerFontColor;
   background: @footerBgColor;
+
+  & * {
+    margin: 5px 0;
+  }
 
   .site-footer-wrapper {
     width: 90%;
@@ -20,32 +24,27 @@
     }
     
     .logo-wrapper {
-      .flex(@direction:column;@align:center);
-      & * {
-        margin: 5px auto;
-      }
+      .flex(@justify:space-between;@align:baseline);
       
-    .logo {
-      a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: @headerFontColor;
+      .logo {
+        a {
+          text-decoration: none;
+          font-size: 2rem;
+          color: @headerFontColor;
 
-        @media @desktop {
-          font-size: 2.4rem;
+          @media @desktop {
+            font-size: 2.4rem;
+          }
         }
       }
-
     }
 
-      .copyright {
-        font-size: 1.3rem;
-      }
+    .copyright {
+      font-size: 1.3rem;
     }
 
     nav {
       .flex();
-
       a {
         width: 95%;
         margin: 10px 2.78vw;
