@@ -14,14 +14,25 @@ function readTextFile(file) {
 let myFile = readTextFile("file:///docs/MEDIA.md")
 console.log(myFile)
 
-const input = document.querySelector('input[type="file"]')
-input.addEventListener('change', function (e) {
-  console.log(input.files)
+// const input = document.querySelector('input[type="file"]')
+// input.addEventListener('change', function (e) {
+//   console.log(input.files)
+//   const reader = new FileReader()
+//   reader.onload = function () {
+//     document.getElementById('content').innerHTML =
+//       marked(reader.result);
+//     console.log(reader.result)
+//   }
+//   reader.readAsText(input.files[0])
+// }, false)
+
+window.onload = function () {
+  let myFile = readTextFile("file:///docs/MEDIA.md")
+  console.log(myFile)
   const reader = new FileReader()
   reader.onload = function () {
-    document.getElementById('content').innerHTML =
-      marked(reader.result);
     console.log(reader.result)
   }
-  reader.readAsText(input.files[0])
-}, false)
+
+  reader.readAsText(myFile)
+}
