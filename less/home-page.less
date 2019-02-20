@@ -144,9 +144,17 @@
   }  
 
   .testimonials {
+    border: 1px solid red;
     width: 90%;
+    max-width: 1000px;
     .flex(@direction:column;@align:center);
+
+    @media @tablet {
+      width: 90%;
+    }
+
     @media @desktop {
+      width: 100%;
       .flex(@justify:space-evenly;@align:center);
       margin: 20px 0;
     }
