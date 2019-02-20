@@ -79,6 +79,12 @@
     .flex(@direction:column;@align:center);
     margin: 20px 0;
 
+    @media @tablet {
+      width: 90%;
+      .flex(@justify:space-between);
+      flex-wrap: wrap;
+    }
+
     @media @desktop {
       width: 100%;
       .flex(@justify:space-between);
@@ -90,7 +96,7 @@
     }
 
     .feature {
-      width: 450px;
+      max-width: 450px;
       .flex(@direction:column;@align:center);
       //margin: 10px 0;
       padding: 20px;
@@ -100,8 +106,14 @@
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
 
+      @media @tablet {
+        //max-width: 300px;
+        width: 48%;
+      }
+
       @media @desktop {
-        //width: 29%;
+        //min-width: 300px;
+        width: 30%;
       }
 
       & * {
