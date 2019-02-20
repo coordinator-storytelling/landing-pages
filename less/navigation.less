@@ -18,10 +18,14 @@
     .flex(@direction:column;@justify:center);
     //padding: 0 5%;
 
+    @media @tablet {
+      width: 90%;
+      .flex(@justify:space-between;@align:center);
+    }
+
     @media @desktop {
       width: 100%;
-      .flex(@direction:row;@justify:space-between;@align:center);
-      padding: 0;
+      .flex(@justify:space-between;@align:center);
     }
 
     .logo {
@@ -29,7 +33,7 @@
       padding: 10px 0;
       .flex(@justify:space-between;@align:center);
 
-      @media @desktop {
+      @media @tablet, @desktop {
         width: auto;
       }
 
@@ -50,7 +54,7 @@
       .flex(@direction:column;@justify:center;@align:center);
       display: none;
       
-      @media @desktop {
+      @media @tablet, @desktop {
         .flex(@justify:space-evenly; @align:baseline);
         margin-bottom: 10px;
       }
@@ -68,7 +72,7 @@
         white-space: nowrap;
         border-bottom: 1px solid @primaryDark;
 
-        @media @desktop {
+        @media @tablet, @desktop {
           width: auto;
           margin: 0 1.39vw;
           border-bottom: initial;
@@ -80,14 +84,14 @@
             background: @headerFontColor;
           }
 
-          @media @desktop {
+          @media @tablet, @desktop {
             text-decoration: underline;
           }
         }
 
         &:first-child {
           border-top: 1px solid @primaryDark;
-          @media @desktop {
+          @media @tablet, @desktop {
             border: none;
           }
         }
@@ -112,7 +116,7 @@
     #openMenu {
       font-size: 2.5rem;
 
-      @media @desktop {
+      @media @tablet, @desktop {
         display: none;
       }
     }
@@ -140,7 +144,7 @@ nav {
     color: @headerFontColor;
     white-space: nowrap;
 
-    @media @desktop {
+    @media @tablet, @desktop {
       margin: 0 1.39vw;
     }
 
@@ -153,17 +157,27 @@ nav {
 /*******DEMO VERSION*****/
 .demo {
   max-width: 500px;
-  @media @desktop {
+
+  @media @tablet {
     max-width: 800px;
   }
+  
+  @media @desktop {
+    max-width: 1430px;
+  }
+
 }
 
 .demo2 {
  max-width: 500px;
   background: @primaryBgShading;
 
-  @media @desktop {
+  @media @tablet {
     max-width: 800px;
+  }
+
+  @media @desktop {
+    max-width: 1430px;
   }
 
   .logo {
