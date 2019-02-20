@@ -32,11 +32,13 @@
         margin: 10px 0;
       }
 
+      @media @desktop {
+        width: 100%;
+      }
+
       .headline, .tagline {
         border: 1px solid magenta;
         width: 100%;
-        // width: 90%;
-        // margin: 10px 0;
         color: @lightText;
       }
 
@@ -71,11 +73,14 @@
   }
 
   .features-list {
+    border: 1px solid red;
     width: 90%;
+    max-width: 1000px;
     .flex(@direction:column;@align:center);
     margin: 20px 0;
 
     @media @desktop {
+      width: 100%;
       .flex(@justify:space-between);
       margin: 30px 0;
     }
@@ -85,6 +90,7 @@
     }
 
     .feature {
+      width: 450px;
       .flex(@direction:column;@align:center);
       //margin: 10px 0;
       padding: 20px;
@@ -95,7 +101,7 @@
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
 
       @media @desktop {
-        width: 29%;
+        //width: 29%;
       }
 
       & * {

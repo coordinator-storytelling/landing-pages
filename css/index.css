@@ -677,6 +677,11 @@ nav .nav-link:hover {
 .home-page .intro .intro-wrapper * {
   margin: 10px 0;
 }
+@media (min-width: 768px) {
+  .home-page .intro .intro-wrapper {
+    width: 100%;
+  }
+}
 .home-page .intro .intro-wrapper .headline,
 .home-page .intro .intro-wrapper .tagline {
   border: 1px solid magenta;
@@ -707,7 +712,9 @@ nav .nav-link:hover {
   }
 }
 .home-page .features-list {
+  border: 1px solid red;
   width: 90%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: normal;
@@ -716,6 +723,7 @@ nav .nav-link:hover {
 }
 @media (min-width: 768px) {
   .home-page .features-list {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -727,6 +735,7 @@ nav .nav-link:hover {
   margin: 5px 0;
 }
 .home-page .features-list .feature {
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: normal;
@@ -737,9 +746,6 @@ nav .nav-link:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 @media (min-width: 768px) {
-  .home-page .features-list .feature {
-    width: 29%;
-  }
 }
 .home-page .features-list .feature * {
   margin: 5px 0;
