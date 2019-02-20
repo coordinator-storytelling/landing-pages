@@ -26,13 +26,22 @@
 //   reader.readAsText(input.files[0])
 // }, false)
 
-window.onload = function () {
-  let myFile = readTextFile("https://bountifulapp.netlify.com/docs/MEDIA.md")
-  console.log(myFile)
-  const reader = new FileReader()
-  reader.onload = function () {
-    console.log(reader.result)
-  }
+let url = "https://bountifulapp.netlify.com/docs/MEDIA.md"
 
-  reader.readAsText(myFile)
+async function getData (url) { 
+  let downloadData = await fetch(url) 
+  let data = await getData.json()
+  console.log(`data: `, data)
 }
+getData(url)
+
+// window.onload = function () {
+//   let myFile = readTextFile("https://bountifulapp.netlify.com/docs/MEDIA.md")
+//   console.log(myFile)
+//   const reader = new FileReader()
+//   reader.onload = function () {
+//     console.log(reader.result)
+//   }
+
+//   reader.readAsText(myFile)
+// }
