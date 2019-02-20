@@ -33,8 +33,8 @@ async function getData (url) {
   let data = await downloadData.text()
   console.log(`data: `, data)
 }
-getData(url)
-document.getElementById('content').innerHTML = marked(await getData(url))
+let doc = await getData(url)
+document.getElementById('content').innerHTML = marked(doc)
 // window.onload = function () {
 //   let myFile = readTextFile("https://bountifulapp.netlify.com/docs/MEDIA.md")
 //   console.log(myFile)
