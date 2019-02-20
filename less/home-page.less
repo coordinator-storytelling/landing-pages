@@ -84,7 +84,6 @@
     .feature {
       max-width: 450px;
       .flex(@direction:column;@align:center);
-      //margin: 10px 0;
       padding: 20px;
       font-size: 1rem;
       background: @lightText;
@@ -130,10 +129,11 @@
     width: 90%;
     max-width: 1000px;
     .flex(@direction:column;@align:center);
+    margin: 20px 0;
+    padding: 10px;  
 
     @media @desktop {
       .flex(@justify:space-evenly;@align:center);
-      margin: 20px 0;
     }
    
     & * {
