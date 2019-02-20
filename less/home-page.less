@@ -141,16 +141,10 @@
     }
 
     .img-content-wrapper, .text-content {
-      @media @desktop {flex: 0 0 48%;}
+      @media @desktop {flex: 0 0 46%;}
     }
 
     .img-content-wrapper {
-      width: 90%;
-
-      @media @desktop {
-        width: 40%;
-      }
-
       img {
         border-radius: 10px;
       }
@@ -191,6 +185,7 @@
     flex-direction: column-reverse;
 
     @media @desktop {
+      
       .flex(@justify:space-evenly;@align:center);
     }
   }
