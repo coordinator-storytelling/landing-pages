@@ -786,6 +786,10 @@ nav .nav-link:hover {
 .home-page .features-list .feature .feature-img-wrapper .feature-img {
   max-width: 100%;
 }
+.home-page .features-list .feature p {
+  line-height: 1.5;
+  letter-spacing: 0.0472rem;
+}
 .home-page .features-list .feature button {
   width: 120px;
   margin: 20px 0;
