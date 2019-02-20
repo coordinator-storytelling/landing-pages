@@ -366,19 +366,23 @@ img {
 }
 .site-header {
   width: 100%;
-  max-width: 1430px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: normal;
+  justify-content: center;
   align-items: center;
   color: #FFFFFF;
   background: #1363A8;
   top: 0;
-  position: fixed;
+  position: sticky;
   z-index: 2;
 }
+@media (min-width: 800px) {
+  .site-header {
+    max-width: 1430px;
+  }
+}
 .site-header .site-header-wrapper {
-  border: 1px solid red;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -388,7 +392,6 @@ img {
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .site-header .site-header-wrapper {
-    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -397,7 +400,6 @@ img {
 }
 @media (min-width: 800px) {
   .site-header .site-header-wrapper {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -573,6 +575,7 @@ nav .nav-link:hover {
 .site-footer {
   width: 100%;
   max-width: 1430px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: normal;
@@ -584,7 +587,6 @@ nav .nav-link:hover {
   background: #1363A8;
 }
 .site-footer .site-footer-wrapper {
-  border: 1px solid red;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -594,7 +596,6 @@ nav .nav-link:hover {
 }
 @media (min-width: 800px) {
   .site-footer .site-footer-wrapper {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -651,18 +652,13 @@ nav .nav-link:hover {
   width: 800px;
 }
 .home-page {
+  width: 100%;
+  max-width: 1430px;
   display: flex;
   flex-direction: column;
   justify-content: normal;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 150px;
-}
-@media (min-width: 800px) {
-  .home-page {
-    margin-top: 60px;
-    margin-bottom: 100px;
-  }
+  margin-bottom: 50px;
 }
 .home-page .intro {
   width: 100%;
@@ -684,7 +680,6 @@ nav .nav-link:hover {
   }
 }
 .home-page .intro .intro-wrapper {
-  border: 1px solid red;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -695,15 +690,8 @@ nav .nav-link:hover {
 .home-page .intro .intro-wrapper * {
   margin: 10px 0;
 }
-@media (min-width: 800px) {
-  .home-page .intro .intro-wrapper {
-    width: 100%;
-  }
-}
 .home-page .intro .intro-wrapper .headline,
 .home-page .intro .intro-wrapper .tagline {
-  border: 1px solid magenta;
-  width: 100%;
   color: #FFFFFF;
 }
 @media (min-width: 800px) {
@@ -730,7 +718,6 @@ nav .nav-link:hover {
   }
 }
 .home-page .features-list {
-  border: 1px solid red;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -741,7 +728,6 @@ nav .nav-link:hover {
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .home-page .features-list {
-    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -751,7 +737,6 @@ nav .nav-link:hover {
 }
 @media (min-width: 800px) {
   .home-page .features-list {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -803,7 +788,6 @@ nav .nav-link:hover {
   color: #FFFFFF;
 }
 .home-page .testimonials {
-  border: 1px solid red;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -811,14 +795,8 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
 }
-@media (min-width: 501px) and (max-width: 800px) {
-  .home-page .testimonials {
-    width: 90%;
-  }
-}
 @media (min-width: 800px) {
   .home-page .testimonials {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
