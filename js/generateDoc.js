@@ -31,10 +31,12 @@ let url = "https://bountifulapp.netlify.com/docs/MEDIA.md"
 async function getData (url) { 
   let downloadData = await fetch(url) 
   let data = await downloadData.text()
+  document.getElementById('content').innerHTML = marked(data)
   console.log(`data: `, data)
 }
-let doc = await getData(url)
-document.getElementById('content').innerHTML = marked(doc)
+
+getData(url)
+
 // window.onload = function () {
 //   let myFile = readTextFile("https://bountifulapp.netlify.com/docs/MEDIA.md")
 //   console.log(myFile)
