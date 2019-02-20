@@ -27,7 +27,7 @@
 // }, false)
 
 window.onload = function () {
-  let myFile = readTextFile("file:///docs/MEDIA.md")
+  let myFile = readTextFile("https://bountifulapp.netlify.com/docs/MEDIA.md")
   console.log(myFile)
   const reader = new FileReader()
   reader.onload = function () {
