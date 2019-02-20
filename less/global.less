@@ -106,7 +106,6 @@ button {
   .buttonSize(@width:100px; @height:auto;@fontSize:1rem);
   .buttonShape(@bRadius:15px; @paddingHeight:5px; @paddingWidth:5px);  
   .buttonStyle(@textAlign:center;@decor:none;@cursor:pointer);
-  .hoverEffect(@bgColor:@primaryColor);
 
   @media @desktop {
     .buttonSize(@width:100px; @height:auto;@fontSize:1.2rem);
@@ -128,8 +127,8 @@ img {
 }
 
 .btn-cta {
-  .buttonColor(@fontColor:@lightText,@bgColor:@accent);
+  .buttonColor(@fontColor:@lightText;@bgColor:@accent);
   .buttonStyle(@fontWeight:900);
-  .hoverEffect(@bgColor:@accent);
+  .hoverEffect(@fontColor:@lightText;@bgColor:@accent);
 }
 

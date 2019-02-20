@@ -332,9 +332,6 @@ button {
   border: none;
   transition: 0.2s;
 }
-button:hover {
-  background: #187ed6;
-}
 @media (min-width: 800px) {
   button {
     width: 100px;
@@ -369,7 +366,9 @@ img {
   transition: 0.2s;
 }
 .btn-cta:hover {
-  background: #f18057;
+  color: #ED5D28;
+  background: #FFFFFF;
+  border: 1px solid #ED5D28;
 }
 .site-header {
   width: 100%;
@@ -712,6 +711,10 @@ nav .nav-link:hover {
   color: #1363A8;
   background: #FFFFFF;
 }
+.home-page .intro .intro-wrapper button:hover {
+  color: #FFFFFF;
+  background: #1363A8;
+}
 @media (min-width: 800px) {
   .home-page .intro .intro-wrapper button {
     align-self: flex-start;
@@ -793,6 +796,9 @@ nav .nav-link:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: #FFFFFF;
+}
+.home-page .features-list .feature button a:hover {
+  color: #ED5D28;
 }
 .home-page .testimonials {
   width: 90%;

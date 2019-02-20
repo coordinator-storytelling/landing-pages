@@ -51,6 +51,11 @@
         color: @primaryColor;
         background: @lightText;
 
+        &:hover {
+          color: @lightText;
+          background: @primaryColor;
+        }
+
         @media @desktop {
           align-self: flex-start;
           font-size: 2.5rem;
@@ -126,6 +131,10 @@
           font-size: 1.5rem;
           font-weight: bold;
           color: @lightText;
+
+          &:hover {
+            color: @accent;
+          }
         }
       }
 
