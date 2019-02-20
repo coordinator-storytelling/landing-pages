@@ -379,16 +379,16 @@ img {
 }
 .site-header .site-header-wrapper {
   border: 1px solid red;
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: normal;
-  padding: 0 5%;
 }
 @media (min-width: 768px) {
   .site-header .site-header-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -567,7 +567,7 @@ nav .nav-link:hover {
 }
 .site-footer .site-footer-wrapper {
   border: 1px solid red;
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   display: flex;
   flex-direction: column-reverse;
@@ -576,6 +576,7 @@ nav .nav-link:hover {
 }
 @media (min-width: 768px) {
   .site-footer .site-footer-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -647,6 +648,7 @@ nav .nav-link:hover {
 }
 .home-page .intro {
   width: 100%;
+  max-width: 1430px;
   display: flex;
   flex-direction: column;
   justify-content: normal;
@@ -663,23 +665,35 @@ nav .nav-link:hover {
     padding-bottom: 250px;
   }
 }
-.home-page .intro .headline,
-.home-page .intro .tagline {
+.home-page .intro .intro-wrapper {
+  border: 1px solid red;
   width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+}
+.home-page .intro .intro-wrapper * {
   margin: 10px 0;
+}
+.home-page .intro .intro-wrapper .headline,
+.home-page .intro .intro-wrapper .tagline {
+  border: 1px solid magenta;
+  width: 100%;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
-  .home-page .intro .headline {
+  .home-page .intro .intro-wrapper .headline {
     font-size: 6.4rem;
   }
 }
 @media (min-width: 768px) {
-  .home-page .intro .tagline {
+  .home-page .intro .intro-wrapper .tagline {
     font-size: 2rem;
   }
 }
-.home-page .intro button {
+.home-page .intro .intro-wrapper button {
   width: 35%;
   max-width: 200px;
   font-size: 1.5rem;
@@ -687,9 +701,8 @@ nav .nav-link:hover {
   background: #FFFFFF;
 }
 @media (min-width: 768px) {
-  .home-page .intro button {
+  .home-page .intro .intro-wrapper button {
     align-self: flex-start;
-    margin: 20px 5%;
     font-size: 2.5rem;
   }
 }

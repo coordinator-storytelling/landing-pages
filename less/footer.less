@@ -11,11 +11,12 @@
 
   .site-footer-wrapper {
     border: 1px solid red;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     .flex(@direction:column-reverse;@justify:center;@align:center);
     
     @media @desktop {
+      width: 100%;
       .flex(@justify:space-between; @align:center);
       //padding: 10px 5%;
     }
