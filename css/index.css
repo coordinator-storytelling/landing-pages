@@ -720,6 +720,10 @@ nav .nav-link:hover {
   margin: 20px 0;
   font-size: 1.25rem;
 }
+.home-page .features-list .feature button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .home-page .testimonials {
   width: 90%;
   display: flex;
