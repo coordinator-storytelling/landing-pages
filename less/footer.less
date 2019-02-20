@@ -1,65 +1,71 @@
 // Footer Styles
 .site-footer {
   width: 100%;
-  .flex(@direction:column-reverse;@justify:center;@align:center);
-  // flex-wrap: nowrap;
+  max-width: 1430px;
+  .flex(@direction:column;@align:center);
   bottom: 0;
   margin-top: 20px;
   padding-bottom: 20px;
   color: @footerFontColor;
   background: @footerBgColor;
 
-  @media @desktop {
-    .flex(@justify:space-between; @align:center);
-    padding: 10px 5%;
-  }
-
-  .logo-wrapper {
-    .flex(@direction:column;@align:center);
-    & * {
-      margin: 5px auto;
+  .site-footer-wrapper {
+    border: 1px solid red;
+    width: 100%;
+    max-width: 1000px;
+    .flex(@direction:column-reverse;@justify:center;@align:center);
+    
+    @media @desktop {
+      .flex(@justify:space-between; @align:center);
+      //padding: 10px 5%;
     }
     
-  .logo {
-    a {
-      text-decoration: none;
-      font-size: 2rem;
-      color: @headerFontColor;
-
-      @media @desktop {
-        font-size: 2.4rem;
+    .logo-wrapper {
+      .flex(@direction:column;@align:center);
+      & * {
+        margin: 5px auto;
       }
-    }
+      
+    .logo {
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: @headerFontColor;
 
-  }
-
-    .copyright {
-      font-size: 1.3rem;
-    }
-  }
-
-  nav {
-    .flex();
-
-    a {
-      width: 95%;
-      margin: 10px 2.78vw;
-      text-align: center;
-      text-decoration: none;
-      font-size: 1.5rem;
-      font-weight: semi-bold;
-      color: @footerFontColor;
-      white-space: nowrap;
-
-      &:hover {
-        text-decoration: underline;
-      }
-
-      @media @desktop {
-        margin: 0 1.39vw;
+        @media @desktop {
+          font-size: 2.4rem;
+        }
       }
 
     }
+
+      .copyright {
+        font-size: 1.3rem;
+      }
+    }
+
+    nav {
+      .flex();
+
+      a {
+        width: 95%;
+        margin: 10px 2.78vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: semi-bold;
+        color: @footerFontColor;
+        white-space: nowrap;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        @media @desktop {
+          margin: 0 1.39vw;
+        }
+      }
+    }    
   }
 }
 

@@ -10,17 +10,19 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">
-      <a href="/index.html">Bountiful</a>
-      <!-- Side Navigation Menu (for smaller screens) -->
-      <i id="openMenu"class="fas fa-bars"></i>
-      <i id="closeMenu" class="far fa-times-circle"></i>
+    <div class="site-header-wrapper">
+      <div class="logo">
+        <a href="/index.html">Bountiful</a>
+        <!-- Side Navigation Menu (for smaller screens) -->
+        <i id="openMenu" class="fas fa-bars"></i>
+        <i id="closeMenu" class="far fa-times-circle"></i>
+      </div>
+      <nav class="mainNav">
+        <a href="./about.html">About</a>
+        <a href="https://appbountiful.netlify.com/login">Login</a>
+        <a href="https://appbountiful.netlify.com/register">Sign Up</a>
+      </nav>
     </div>
-    <nav class="mainNav">
-      <a href="./about.html">About</a>
-      <a href="https://appbountiful.netlify.com/login">Login</a>
-      <a href="https://appbountiful.netlify.com/register">Sign Up</a>
-    </nav>
   </header>
   <div class="container home-page">
     <section class="intro">
@@ -91,16 +93,18 @@
   </div><!--container home page-->
 
   <footer class="site-footer">
-    <div class="logo-wrapper">
-      <div class="logo">
-        <a href="/index.html">Bountiful</a>
+    <div class="site-footer-wrapper">
+      <div class="logo-wrapper">
+        <div class="logo">
+          <a href="/index.html">Bountiful</a>
+        </div>
+        <p class="copyright">Copyright &copy; 2019 Bountiful</p>
       </div>
-      <p class="copyright">Copyright &copy; 2019 Bountiful</p>
-    </div>
-    <nav class="footer-nav">
+      <nav class="footer-nav">
         <a href="#">Legal Stuff</a>
         <a href="#">Privacy Policy</a>
-    </nav>
+      </nav>
+    </div>
   </footer>
   <!-- Script File(s) -->
   <script src="./js/script.js"></script>
