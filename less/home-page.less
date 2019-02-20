@@ -157,15 +157,30 @@
     }
 
     blockquote {
-      font-size: 5rem;
+    font-size: 2rem;
 
+    @media @desktop {
+      font-size: 3rem;
+    }
       &:before, &:after {
           content: '\201C';
           font-family: 'Sanchez';
-          color: lighten(@darkText, 20%);
+          font-weight: semi-bold;
+          color: @darkText;
       }
       &:after {
           content: '\201D';
+      }
+
+      & p {
+        display: inline;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: 500;
+        
+        @media @desktop {
+          font-size: 2rem;
+        }
       }
     }
 

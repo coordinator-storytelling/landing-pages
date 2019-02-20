@@ -833,16 +833,33 @@ nav .nav-link:hover {
   border-radius: 10px;
 }
 .home-page .testimonials blockquote {
-  font-size: 5rem;
+  font-size: 2rem;
+}
+@media (min-width: 800px) {
+  .home-page .testimonials blockquote {
+    font-size: 3rem;
+  }
 }
 .home-page .testimonials blockquote:before,
 .home-page .testimonials blockquote:after {
   content: '\201C';
   font-family: 'Sanchez';
-  color: #8c8c8c;
+  font-weight: semi-bold;
+  color: #595959;
 }
 .home-page .testimonials blockquote:after {
   content: '\201D';
+}
+.home-page .testimonials blockquote p {
+  display: inline;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 500;
+}
+@media (min-width: 800px) {
+  .home-page .testimonials blockquote p {
+    font-size: 2rem;
+  }
 }
 .home-page .inverse-content {
   flex-direction: column-reverse;
