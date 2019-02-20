@@ -953,7 +953,7 @@ nav .nav-link:hover {
   }
 }
 .about-page .team .team-list .team-member {
-  width: 450px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: normal;
