@@ -1,13 +1,13 @@
 
 .about-page {
-  margin-top: 60px;
-  margin-bottom: 150px;
-  @media @desktop {
-    margin-top: 80px;
-  }
+  width: 100%;
+  max-width: 1430px;  
+  margin-top: 30px;
+  margin-bottom: 50px;
 
   .about-intro {
     width: 90%;
+    max-width: 1000px;
     margin: 20px auto;
     .about-headline {
       margin: 10px auto;
@@ -24,6 +24,7 @@
 
 .team {
     width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px 0;
 
@@ -37,15 +38,31 @@
     }
 
     .team-list {
+
+      @media @tablet {
+        .flex(@justify:space-between);
+        flex-wrap: wrap;
+      }
+
       @media @desktop {
         .flex(@justify:space-evenly;@align:center);
+        flex-wrap: wrap;
       }
       .team-member {
+        width: 450px;
         .flex(@direction:column;@align:center);
         margin: 10px 0;
         background: @lightText;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
+
+        @media @tablet {
+          flex: 0 0 48%;
+        }
+
+        @media @desktop {
+          flex: 0 0 23%;
+        }
 
         .team-member-img-wrapper {
           width: 30%;
