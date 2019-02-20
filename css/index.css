@@ -593,7 +593,7 @@ nav .nav-link:hover {
   width: 90%;
   max-width: 1000px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -632,7 +632,7 @@ nav .nav-link:hover {
 }
 .site-footer .site-footer-wrapper nav a {
   width: 95%;
-  margin: 10px 2.78vw;
+  margin: 0 2.78vw;
   text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
