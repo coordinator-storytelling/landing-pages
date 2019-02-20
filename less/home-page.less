@@ -9,6 +9,7 @@
   
   .intro {
     width: 100%;
+    max-width: 1430px;
     .flex(@direction:column;@align:center);
     padding: 75px 0;
     background-image: url(/img/bannerdark.png);
@@ -21,37 +22,51 @@
       padding-bottom: 250px;
     }
 
-    .headline, .tagline {
-      width: 90%;
-      margin: 10px 0;
-      color: @lightText;
-    }
+    .intro-wrapper {
+      border: 1px solid red;
+      width: 100%;
+      max-width: 1000px;
+      .flex(@direction:column;);
 
-    .headline {
-      @media @desktop {
-        font-size: 6.4rem;
+      & * {
+        margin: 10px 0;
+      }
+
+      .headline, .tagline {
+        border: 1px solid magenta;
+        // width: 90%;
+        // margin: 10px 0;
+        color: @lightText;
+      }
+
+      .headline {
+        @media @desktop {
+          font-size: 6.4rem;
+        }
+      }
+
+      .tagline {
+        @media @desktop {
+          font-size: 2rem;
+        }
+      }
+
+      button {
+        width: 35%;
+        max-width: 200px;
+        font-size: 1.5rem;
+        color: @primaryColor;
+        background: @lightText;
+
+        @media @desktop {
+          align-self: flex-start;
+          //margin: 20px 5%;
+          font-size: 2.5rem;
+        }
       }
     }
 
-    .tagline {
-      @media @desktop {
-        font-size: 2rem;
-      }
-    }
 
-    button {
-      width: 35%;
-      max-width: 200px;
-      font-size: 1.5rem;
-      color: @primaryColor;
-      background: @lightText;
-
-      @media @desktop {
-        align-self: flex-start;
-        margin: 20px 5%;
-        font-size: 2.5rem;
-      }
-    }
   }
 
   .features-list {
