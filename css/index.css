@@ -448,12 +448,12 @@ img {
 .site-header .site-header-wrapper .mainNav a {
   width: 100%;
   margin: 0 2.78vw;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: semi-bold;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.2rem;
   color: #FFFFFF;
   white-space: nowrap;
   border-bottom: 1px solid #0F5080;
@@ -462,6 +462,7 @@ img {
   .site-header .site-header-wrapper .mainNav a {
     width: auto;
     margin: 0 1.39vw;
+    padding: 12px;
     border-bottom: initial;
   }
 }
