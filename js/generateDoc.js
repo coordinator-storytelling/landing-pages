@@ -30,7 +30,7 @@ let url = "https://bountifulapp.netlify.com/docs/MEDIA.md"
 
 async function getData (url) { 
   let downloadData = await fetch(url) 
-  let data = await getData.json()
+  let data = await downloadData.json()
   console.log(`data: `, data)
 }
 getData(url)
