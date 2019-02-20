@@ -818,11 +818,11 @@ nav .nav-link:hover {
 @media (min-width: 800px) {
   .home-page .testimonials .img-content-wrapper,
   .home-page .testimonials .text-content {
-    width: 48%;
+    flex: 0 0 48%;
   }
 }
 .home-page .testimonials .img-content-wrapper {
-  width: 100%;
+  width: 90%;
 }
 @media (min-width: 800px) {
   .home-page .testimonials .img-content-wrapper {

@@ -141,11 +141,11 @@
     }
 
     .img-content-wrapper, .text-content {
-      @media @desktop {width: 48%;}
+      @media @desktop {flex: 0 0 48%;}
     }
 
     .img-content-wrapper {
-      width: 100%;
+      width: 90%;
 
       @media @desktop {
         width: 40%;
@@ -157,11 +157,12 @@
     }
 
     blockquote {
-    font-size: 2rem;
+      font-size: 2rem;
 
-    @media @desktop {
-      font-size: 3rem;
-    }
+      @media @desktop {
+        font-size: 3rem;
+      }
+
       &:before, &:after {
           content: '\201C';
           font-family: 'Sanchez';
