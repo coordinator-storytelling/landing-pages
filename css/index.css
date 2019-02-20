@@ -357,8 +357,8 @@ img {
 }
 .btn-cta {
   color: #FFFFFF;
-  background: #FF7F50;
-  border: 1px solid #FF7F50;
+  background: #ED5D28;
+  border: 1px solid #ED5D28;
   font-weight: 900;
   text-align: center;
   text-decoration: none;
@@ -369,7 +369,7 @@ img {
   transition: 0.2s;
 }
 .btn-cta:hover {
-  background: #ffa483;
+  background: #f18057;
 }
 .site-header {
   width: 100%;
@@ -458,8 +458,9 @@ img {
   padding: 20px 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: semi-bold;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
   letter-spacing: 0.2rem;
   color: #FFFFFF;
   white-space: nowrap;
@@ -473,16 +474,9 @@ img {
     border-bottom: initial;
   }
 }
-@media phone {
-  .site-header .site-header-wrapper .mainNav a:hover {
-    color: #1363A8;
-    background: #FFFFFF;
-  }
-}
-@media (min-width: 501px) and (max-width: 800px), (min-width: 800px) {
-  .site-header .site-header-wrapper .mainNav a:hover {
-    text-decoration: underline;
-  }
+.site-header .site-header-wrapper .mainNav a:hover {
+  color: #1363A8;
+  background: #FFFFFF;
 }
 .site-header .site-header-wrapper .mainNav a:first-child {
   border-top: 1px solid #0F5080;
@@ -494,15 +488,14 @@ img {
 }
 .site-header .site-header-wrapper .mainNav a:last-child {
   color: #FFFFFF;
-  background: #FF7F50;
+  background: #ED5D28;
   border-radius: 3px;
   margin-bottom: 0;
+  font-size: 1.8rem;
 }
-@media phone {
-  .site-header .site-header-wrapper .mainNav a:last-child:hover {
-    color: #1363A8;
-    background: #FFFFFF;
-  }
+.site-header .site-header-wrapper .mainNav a:last-child:hover {
+  color: #ED5D28;
+  background: #FFFFFF;
 }
 .site-header .site-header-wrapper #openMenu {
   font-size: 2.5rem;
@@ -577,7 +570,7 @@ nav .nav-link:hover {
 }
 .demo2 nav a:last-child {
   color: #FFFFFF;
-  background: #FF7F50;
+  background: #ED5D28;
   border-radius: 3px;
 }
 .site-footer {

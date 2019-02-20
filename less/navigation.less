@@ -62,8 +62,9 @@
         padding: 20px 10px;
         text-align: center;
         text-decoration: none;
-        font-size: 2rem;
-        font-weight: semi-bold;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.6rem;
         letter-spacing: 0.2rem;
         color: @headerFontColor;
         white-space: nowrap;
@@ -77,14 +78,8 @@
         }
 
         &:hover {
-          @media phone {
-            color: @headerBgColor;
-            background: @headerFontColor;
-          }
-
-          @media @tablet, @desktop {
-            text-decoration: underline;
-          }
+          color: @headerBgColor;
+          background: @headerFontColor;
         }
 
         &:first-child {
@@ -99,12 +94,11 @@
           background: @accent;
           border-radius: 3px;
           margin-bottom: 0;
+          font-size: 1.8rem;
 
           &:hover {
-            @media phone {
-              color: @headerBgColor;
-              background: @headerFontColor;
-            }
+            color: @accent;
+            background: @headerFontColor;
           }
         }
 
