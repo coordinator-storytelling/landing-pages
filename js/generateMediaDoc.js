@@ -7,5 +7,6 @@ async function getData (url) {
   console.log(`data: `, data)
 }
 
-getData(url)
+windows.onload = await getData(url)
+
 
