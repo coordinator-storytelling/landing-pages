@@ -1018,6 +1018,6 @@ nav .nav-link:hover {
   text-align: center;
   border: 1px solid black;
 }
-.media-credits .content table * th {
+.media-credits .content table * thead tr th {
   font-size: 2rem;
 }
