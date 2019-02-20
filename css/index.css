@@ -1013,11 +1013,9 @@ nav .nav-link:hover {
   width: 90%;
   max-width: 1000px;
 }
-.media-credits .content table * {
-  font-size: 1.6rem;
-  text-align: center;
+.media-credits .content table,
+.media-credits .content th,
+.media-credits .content td {
   border: 1px solid black;
-}
-.media-credits .content table * thead tr th {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
