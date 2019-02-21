@@ -1006,7 +1006,7 @@ nav .nav-link:hover {
   max-width: 1430px;
   display: flex;
   flex-direction: column;
-  justify-content: normal;
+  justify-content: center;
   align-items: center;
 }
 .media-credits #content {
