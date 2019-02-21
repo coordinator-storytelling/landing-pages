@@ -10,14 +10,15 @@
   border: 1px solid red;
   width: 90%;
   max-width: 1000px;
-  .flex(@justify:center;@align:center);
+  //.flex(@justify:center;@align:center);
+  .flex(@direction:column;@align:center);
   height: 500px;
   position: relative;
   overflow: hidden;
-  margin-top: 16px;
-  @media(min-width: 1200px){
-    width: 1200px;
-  }
+  // margin-top: 16px;
+  // @media(min-width: 1200px){
+  //   width: 1200px;
+  // }
   .left-button, .right-button {
     .flex(center);
     color: @lightText;
