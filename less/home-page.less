@@ -171,7 +171,9 @@
       flex-direction: column;
       align-items: center;
       margin: 20px 0;
-      padding: 10px;  
+      padding: 10px;
+      position: relative;
+      animation: slideLeft 0.5s forwards;    
 
       @media @tablet, @desktop {
         //.flex(@justify:space-evenly;@align:center);
@@ -233,5 +235,13 @@
       
       .flex(@justify:space-evenly;@align:center);
     }
+  }
+
+  @keyframes slideLeft {
+    100% { left: 0; }
+  }
+
+  @keyframes slideRight {
+    100% { right: 0; }
   }
 }
