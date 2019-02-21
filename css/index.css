@@ -1003,10 +1003,11 @@ nav .nav-link:hover {
 }
 .media-credits {
   width: 100%;
+  height: 100%;
   max-width: 1430px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: normal;
   align-items: center;
 }
 .media-credits #content {
