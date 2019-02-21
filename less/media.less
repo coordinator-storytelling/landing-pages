@@ -4,38 +4,26 @@
   margin: 20px 0;
   .flex(@direction:column;@align:center);
 
-  // #content {
-  //   width: 90%;
-  //   padding: 20px 0;
-  //   overflow-x: auto;
-  //   table * {
-  //     border: 1px solid black;
-  //     font-size: 1.6rem;
+  #content {
+    width: 90%;
+    @media @tablet, @desktop {
+      padding: 20px 0;
+      overflow-x: auto;
+      table * {
+        border: 1px solid black;
+        font-size: 1.6rem;
 
-  //     th {
-  //       font-size: 2rem;
-  //       font-weight: bold;
-  //     }
+        th {
+          font-size: 2rem;
+          font-weight: bold;
+        }
 
-  //     td {
-  //       padding: 1rem;
-  //     }
-  //   }
-
-  //   @media phone {
-  //     max-width: 500px;
-  //     padding: 5px 0;
-  //   }
-
-  //   @media @tablet {
-  //     max-width: 800px;
-  //     padding: 10px 0;
-  //   }
-
-  //   @media @desktop {
-  //     max-width: 1000px;
-  //   }
-  // }
+        td {
+          padding: 1rem;
+        }
+      }
+    }
+  }
 }
 
 /* 
@@ -43,10 +31,7 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
+@media @phone {
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
