@@ -1,3 +1,4 @@
+
 class Carousel {
   constructor(carousel) {
     this.carousel = carousel
@@ -67,9 +68,19 @@ class Carousel {
 
 }
 
-
 let carousel = document.querySelector('.carousel')
-// Display the first image in the list by default
+
+// Display the first card in the list by default
 carousel.querySelector('.testimony').style.display = 'flex'
 carousel = new Carousel(carousel)
 document.querySelector('.slide-indicator div').style.backgroundColor = '#4195D2'
+
+//Auto play slideshow
+const autoPlay = () => {
+  setInterval(() => {
+    carousel.goForward()
+  }, 3000)
+}
+
+autoPlay()
+
