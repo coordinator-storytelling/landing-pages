@@ -1009,13 +1009,13 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
 }
-.media-credits .content {
+.media-credits #content {
   width: 90%;
   max-width: 1000px;
 }
-.media-credits .content table,
-.media-credits .content th,
-.media-credits .content td {
+.media-credits #content table,
+.media-credits #content th,
+.media-credits #content td {
   border: 1px solid black;
   font-size: 1.6rem;
 }
