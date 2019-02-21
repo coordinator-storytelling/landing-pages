@@ -825,17 +825,20 @@ nav .nav-link:hover {
   color: #ED5D28;
 }
 .home-page .testimonials .testimony {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   display: none;
   flex-direction: column;
   align-items: center;
   padding: 10px;
   position: relative;
+  border-radius: 15px;
+  background: #FFFFFF;
   animation: slideLeft 0.5s forwards;
 }
-@media (min-width: 501px) and (max-width: 800px), (min-width: 800px) {
+@media (min-width: 800px) {
   .home-page .testimonials .testimony {
+    width: 88%;
     display: none;
     flex-direction: row;
     justify-content: space-between;
@@ -1036,7 +1039,6 @@ nav .nav-link:hover {
   display: none;
 }
 .carousel {
-  border: 1px solid red;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -1050,32 +1052,41 @@ nav .nav-link:hover {
 .carousel .left-button,
 .carousel .right-button {
   display: flex;
-  flex-direction: center;
-  justify-content: normal;
-  align-items: normal;
-  color: #FFFFFF;
-  background-color: #1363A8;
-  font-size: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #7F969F;
+  background: #FFFFFF;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   border-radius: 50%;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   z-index: 5;
   cursor: pointer;
 }
+@media (min-width: 800px) {
+  .carousel .left-button,
+  .carousel .right-button {
+    font-size: 4rem;
+    width: 50px;
+    height: 50px;
+  }
+}
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: #1363A8;
-  background-color: #FFFFFF;
-  border: 2px solid #1363A8;
+  color: #FFFFFF;
+  background-color: #4195D2;
 }
 .carousel .left-button {
   top: 50%;
-  left: 25px;
+  left: 0;
   transform: translate(0, -50%);
 }
 .carousel .right-button {
   top: 50%;
-  right: 25px;
+  right: 0;
   transform: translate(0, -50%);
 }

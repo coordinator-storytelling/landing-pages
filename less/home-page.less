@@ -164,7 +164,7 @@
 
   .testimonials {
     .testimony {
-      width: 90%;
+      width: 100%;
       max-width: 1000px;
       //.flex(@direction:column;@align:center);
       display: none;
@@ -173,10 +173,14 @@
       //margin: 20px 0;
       padding: 10px;
       position: relative;
+      //border: 1px solid black;
+      border-radius: 15px;
+      background: @lightText;
       animation: slideLeft 0.5s forwards;    
 
-      @media @tablet, @desktop {
+      @media @desktop {
         //.flex(@justify:space-evenly;@align:center);
+        width: 88%;
         display: none;
         flex-direction: row;
         justify-content: space-between;
