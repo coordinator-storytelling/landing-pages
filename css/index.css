@@ -1069,7 +1069,7 @@ nav .nav-link:hover {
   transform: translate(0, -50%);
 }
 .carousel .testimony {
-  position: absolute;
+  position: relative;
   animation: slideLeft 0.5s forwards;
 }
 @keyframes slideLeft {
