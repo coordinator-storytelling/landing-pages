@@ -6,81 +6,43 @@
 
   #content {
     width: 90%;
-    @media @tablet, @desktop {
-      padding: 20px 0;
-      table * {
-        border: 1px solid @primaryDark;
+    padding: 20px 0;
 
-        th {
-          font-size: 2rem;
-          font-weight: bold;
-          padding: 1rem;
+    @media @phone {
+      padding: 0;
+    }
+
+    table * {
+      border: 1px solid @primaryDark;
+
+      th {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+
+        @media @phone {
+          font-size: 1.2rem;
+          padding: 0;
         }
+      }
 
-        td {
-          padding: 1.5rem;
-          font-size: 1.6rem;
+      td {
+        padding: 1.5rem;
+        font-size: 1.6rem;
+
+        @media @phone {
+          font-size: 1rem;
         }
+      }
 
-        a {
-          font-size: 1.6rem;
-          border: 0;
+      a {
+        font-size: 1.6rem;
+        border: 0;
+
+        @media @phone {
+          font-size: 1rem;
         }
       }
     }
   }
 }
-
-/* 
-Code by Chris Coyier
-https://css-tricks.com/responsive-data-tables/
-
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-// @media @phone {
-//   /* Force table to not be like tables anymore */
-//   table {
-//     overflow-x: auto;
-//   }
-// 	table, thead, tbody, th, td, tr, a { 
-//     display: block; 
-//     font-size: 1.2rem;
-// 	}
-	
-// 	/* Hide table headers (but not display: none;, for accessibility) */
-// 	thead tr { 
-// 		position: absolute;
-// 		top: -9999px;
-// 		left: -9999px;
-// 	}
-	
-// 	tr { border: 1px solid #ccc; }
-	
-// 	td { 
-// 		/* Behave  like a "row" */
-// 		border: none;
-// 		border-bottom: 1px solid #eee; 
-// 		position: relative;
-// 		padding-left: 50%; 
-// 	}
-	
-// 	td:before { 
-// 		/* Now like a table header */
-// 		position: absolute;
-// 		/* Top/left values mimic padding */
-// 		top: 6px;
-// 		left: 6px;
-// 		width: 45%; 
-// 		padding-right: 10px; 
-// 		white-space: nowrap;
-// 	}
-	
-// 	/*
-// 	Label the data
-// 	*/
-// 	td:nth-of-type(1):before { content: "Image Filename"; }
-// 	td:nth-of-type(2):before { content: "Source / Creator"; }
-// 	td:nth-of-type(3):before { content: "License"; }
-// }

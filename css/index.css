@@ -1012,33 +1012,42 @@ nav .nav-link:hover {
 }
 .media-credits #content {
   width: 90%;
+  padding: 20px 0;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (max-width: 500px) {
   .media-credits #content {
-    padding: 20px 0;
-  }
-  .media-credits #content table * {
-    border: 1px solid #0F5080;
-  }
-  .media-credits #content table * th {
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem;
-  }
-  .media-credits #content table * td {
-    padding: 1.5rem;
-    font-size: 1.6rem;
-  }
-  .media-credits #content table * a {
-    font-size: 1.6rem;
-    border: 0;
+    padding: 0;
   }
 }
-/* 
-Code by Chris Coyier
-https://css-tricks.com/responsive-data-tables/
-
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
+.media-credits #content table * {
+  border: 1px solid #0F5080;
+}
+.media-credits #content table * th {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .media-credits #content table * th {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+.media-credits #content table * td {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .media-credits #content table * td {
+    font-size: 1rem;
+  }
+}
+.media-credits #content table * a {
+  font-size: 1.6rem;
+  border: 0;
+}
+@media (max-width: 500px) {
+  .media-credits #content table * a {
+    font-size: 1rem;
+  }
+}
