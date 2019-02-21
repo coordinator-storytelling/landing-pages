@@ -1021,13 +1021,11 @@ nav .nav-link:hover {
   .media-credits #content table * {
     border: 1px solid black;
     font-size: 1.6rem;
+    padding: 1rem;
   }
   .media-credits #content table * th {
     font-size: 2rem;
     font-weight: bold;
-  }
-  .media-credits #content table * td {
-    padding: 1rem;
   }
 }
 /* 
