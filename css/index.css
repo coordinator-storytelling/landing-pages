@@ -1016,7 +1016,6 @@ nav .nav-link:hover {
 @media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
   .media-credits #content {
     padding: 20px 0;
-    overflow-x: auto;
   }
   .media-credits #content table * {
     border: 1px solid #0F5080;
@@ -1045,6 +1044,9 @@ and also iPads specifically.
 */
 @media (max-width: 500px) {
   /* Force table to not be like tables anymore */
+  table {
+    overflow-x: auto;
+  }
   table,
   thead,
   tbody,

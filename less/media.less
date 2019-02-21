@@ -8,7 +8,6 @@
     width: 90%;
     @media @tablet, @desktop {
       padding: 20px 0;
-      overflow-x: auto;
       table * {
         border: 1px solid @primaryDark;
 
@@ -41,7 +40,10 @@ This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
 @media @phone {
-	/* Force table to not be like tables anymore */
+  /* Force table to not be like tables anymore */
+  table {
+    overflow-x: auto;
+  }
 	table, thead, tbody, th, td, tr, a { 
     display: block; 
     font-size: 1.2rem;
