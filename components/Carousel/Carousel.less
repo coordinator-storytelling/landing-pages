@@ -7,17 +7,21 @@
 }
 
 .carousel {
+  /* Size and position settings */
   width: 90%;
   max-width: 1000px;
+  height: 450px;
   .flex(@direction:column;@justify:center;@align:center);
-  //.flex(@direction:column;@align:center);
-  height: 400px;
   position: relative;
   overflow: hidden;
-  // margin-top: 16px;
-  // @media(min-width: 1200px){
-  //   width: 1200px;
-  // }
+  border-radius: 15px;
+  background: @lightText; 
+
+  /* Tablet and Desktop View */
+  @media @tablet, @desktop {
+    height: 400px;
+  }
+
   .left-button, .right-button {
     .flex(@justify:center;@align:center);
     font-size: 3rem;
@@ -53,6 +57,31 @@
     right: 0;
     transform: translate(0, -50%);
   }
+
+  .slide-indicator-wrapper {
+    .flex(@direction:column;@align:center);
+
+    .slide-indicator {
+      .flex(@direction:row;@justify:space-evenly;@align:center);
+      
+      div {
+        width: 1rem;
+        height: 1rem;
+        margin: 0 1rem;
+        background: @secondaryBgShading;
+        border-radius: 50%;
+        
+        @media @tablet, @desktop {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 2rem;
+        } //@media @tablet, @destkop
+      } //div
+    } //.slide-indicator
+
+  }
+
+  /* Target content */
   // img {
   //   width: 100%;
   //   display: none;
@@ -60,12 +89,7 @@
   //   animation: slideLeft 0.5s forwards;  
   // }
 
-  // .testimony {
-  //   //display: none;
-  //   position: relative;
-  //   animation: slideLeft 0.5s forwards;  
-  // }
-
+  /* Animation */
   // @keyframes slideLeft {
   //   100% { left: 0; }
   // }

@@ -6,16 +6,24 @@ class Carousel {
     // Place the NodeList of images inside an array to facilitate moving through the list
     this.testimonials = Array.from(carousel.querySelectorAll('.testimony'))
 
+    for (let i = 0; i < this.testimonials.length; i++) {
+      let dot = document.createElement('div')
+      document.querySelector('.slide-indicator').append(dot)
+    }
+    this.cardIndicator = document.querySelectorAll('.slide-indicator div')
+    console.log(this.cardIndicator)
+
     this.leftButton.addEventListener('click', () => this.goBack())
     this.rightButton.addEventListener('click', () => this.goForward())
   }
 
-  displayImage(num = 0, direction = 'left') {
+  displayCard(num = 0, direction = 'left') {
     for (let i = 0; i < this.testimonials.length; i++) {
       // Find the index number of the image currently being displayed
       if (window.getComputedStyle(this.testimonials[i], null).display === 'flex') {
         this.displayIndex = i
         this.testimonials[i].style.display = 'none'
+        this.cardIndicator[i].style.backgroundColor = '#7F969F'
       }
     }
 
@@ -42,14 +50,19 @@ class Carousel {
       this.testimonials[this.displayIndex].style.animation = 'slideLeft 0.5s forwards'
     }
 
+    this.highlightDot(this.displayIndex)
   }
 
   goForward() {
-    this.displayImage(1, 'left')
+    this.displayCard(1, 'left')
   }
 
   goBack() {
-    this.displayImage(-1, 'right')
+    this.displayCard(-1, 'right')
+  }
+
+  highlightDot (index) {
+    this.cardIndicator[index].style.backgroundColor = '#4195D2'
   }
 
 }
@@ -59,3 +72,4 @@ let carousel = document.querySelector('.carousel')
 // Display the first image in the list by default
 carousel.querySelector('.testimony').style.display = 'flex'
 carousel = new Carousel(carousel)
+document.querySelector('.slide-indicator div').style.backgroundColor = '#4195D2'

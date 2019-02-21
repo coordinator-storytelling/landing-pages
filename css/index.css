@@ -381,7 +381,7 @@ img {
   background: #1363A8;
   top: 0;
   position: sticky;
-  z-index: 2;
+  z-index: 10;
 }
 @media (min-width: 800px) {
   .site-header {
@@ -832,8 +832,6 @@ nav .nav-link:hover {
   align-items: center;
   padding: 10px;
   position: relative;
-  border-radius: 15px;
-  background: #FFFFFF;
   animation: slideLeft 0.5s forwards;
 }
 @media (min-width: 800px) {
@@ -1039,15 +1037,26 @@ nav .nav-link:hover {
   display: none;
 }
 .carousel {
+  /* Size and position settings */
   width: 90%;
   max-width: 1000px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
+  background: #FFFFFF;
+  /* Tablet and Desktop View */
+  /* Target content */
+  /* Animation */
+}
+@media (min-width: 501px) and (max-width: 800px), (min-width: 800px) {
+  .carousel {
+    height: 400px;
+  }
 }
 .carousel .left-button,
 .carousel .right-button {
@@ -1089,4 +1098,30 @@ nav .nav-link:hover {
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
+}
+.carousel .slide-indicator-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.carousel .slide-indicator-wrapper .slide-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.carousel .slide-indicator-wrapper .slide-indicator div {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 1rem;
+  background: #7F969F;
+  border-radius: 50%;
+}
+@media (min-width: 501px) and (max-width: 800px), (min-width: 800px) {
+  .carousel .slide-indicator-wrapper .slide-indicator div {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 2rem;
+  }
 }
