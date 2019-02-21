@@ -1002,8 +1002,8 @@ nav .nav-link:hover {
   }
 }
 .media-credits {
+  border: 1px solid red;
   width: 100%;
-  height: 100%;
   max-width: 1430px;
   display: flex;
   flex-direction: column;
