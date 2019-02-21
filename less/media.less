@@ -9,14 +9,22 @@
     @media @tablet, @desktop {
       padding: 20px 0;
       overflow-x: auto;
-      table * {
-        border: 1px solid black;
-        font-size: 1.6rem;
-        padding: 1rem;
+      table {
+        border: 1px solid @primaryDark;
 
         th {
           font-size: 2rem;
           font-weight: bold;
+          padding: 1rem;
+        }
+
+        td {
+          padding: 1.5rem;
+          font-size: 1.6rem;
+        }
+
+        a {
+          font-size: 1.6rem;
         }
       }
     }

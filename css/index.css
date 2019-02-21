@@ -1018,14 +1018,20 @@ nav .nav-link:hover {
     padding: 20px 0;
     overflow-x: auto;
   }
-  .media-credits #content table * {
-    border: 1px solid black;
-    font-size: 1.6rem;
-    padding: 1rem;
+  .media-credits #content table {
+    border: 1px solid #0F5080;
   }
-  .media-credits #content table * th {
+  .media-credits #content table th {
     font-size: 2rem;
     font-weight: bold;
+    padding: 1rem;
+  }
+  .media-credits #content table td {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+  }
+  .media-credits #content table a {
+    font-size: 1.6rem;
   }
 }
 /* 
