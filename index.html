@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1363A8">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css">
+  <script src="./components/Carousel/Carousel.js" async></script>
 </head>
 <body>
   <!-- Site Header -->
@@ -36,7 +37,6 @@
         <div class="learn-more-btn-wrapper">
           <a class="learn-more-btn" href="#features-list">Learn More<i class="fas fa-chevron-down"></i></a>
         </div>
-
       </div>
     </section>
     <section id="features-list">
@@ -70,32 +70,40 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
-      <div class="img-content-wrapper">
-        <img src="./img/hugging_kids.jpg" class="img-fluid rounded" alt="Lets have fun!">
-      </div>
-      <div class="text-content">
-        <!-- <h2>Adventure Awaits</h2> -->
-        <blockquote>
-          <p>Adventure webdesign pretty design design. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p>
-          <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website
-            theme.</p>
-        </blockquote>
-
-      </div>
-    </section>
-
-    <section class="testimonials inverse-content">
-      <div class="text-content">
-        <blockquote>
-          <p>Expedition excursion design darn excursion fun webdesign.</p>
-          <p>Traveler blogger website design expedition clean excursion traveling.</p>
-        </blockquote>
+    <section class="testimonials carousel">
+      <div class="left-button"><</div>
+      <div class="testimony">
+        <div class="img-content-wrapper">
+          <img src="./img/hugging_kids.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
-      <div class="img-content-wrapper">
-        <img src="./img/kids.jpg" alt="Second slide">
+        <div class="text-content">
+          <blockquote>
+            <p>Adventure webdesign pretty design design. Pretty simple traveling fun WordPress wanderlust darn simple organized.
+            </p>
+            <p>Expedition colorful design simple excursion design organized website
+              theme.</p>
+          </blockquote>
+        </div>
+      </div>
+      <div class="testimony">
+        <div class="img-content-wrapper">
+          <img src="./img/kids.jpg" alt="Second slide">
+        </div>
+        <div class="text-content">
+          <blockquote>
+            <p>Expedition excursion design darn excursion fun webdesign.</p>
+            <p>Traveler blogger website design expedition clean excursion traveling.</p>
+          </blockquote>
+        </div>
+      </div>
+      <!-- <div class="testimony"></div> -->
+      <div class="right-button">></div>
+      <div class="slide-indicator-wrapper">
+        <div class="slide-indicator">
+        </div>
       </div>
     </section>
+    <!-- <section class="testimonials inverse-content"></section> -->
   </div><!--container home page-->
 
   <!-- Site Footer -->
