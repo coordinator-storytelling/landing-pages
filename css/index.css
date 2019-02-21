@@ -1045,7 +1045,8 @@ and also iPads specifically.
   tbody,
   th,
   td,
-  tr {
+  tr,
+  a {
     display: block;
     font-size: 1.2rem;
   }
