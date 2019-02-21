@@ -1031,6 +1031,9 @@ nav .nav-link:hover {
   }
 }
 /* 
+Code by Chris Coyier
+https://css-tricks.com/responsive-data-tables/
+
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
@@ -1044,6 +1047,7 @@ and also iPads specifically.
   td,
   tr {
     display: block;
+    font-size: 1.2rem;
   }
   /* Hide table headers (but not display: none;, for accessibility) */
   thead tr {
