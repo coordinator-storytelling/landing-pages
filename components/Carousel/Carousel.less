@@ -18,12 +18,20 @@
   background: @lightText; 
 
   /* Tablet and Desktop View */
-  @media @tablet, @desktop {
+  @media @tablet {
+    height: 650px;
+  }
+
+  @media @desktop {
     height: 400px;
   }
 
   .left-button, .right-button {
     .flex(@justify:center;@align:center);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
     font-size: 3rem;
     font-weight: bold;
     color: @secondaryBgShading;
@@ -31,16 +39,14 @@
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
     border-radius: 50%;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    z-index: 5;
+    opacity: 0.6;
     cursor: pointer;
 
     @media @desktop {
       font-size: 4rem;
       width: 50px;
       height: 50px;
+
     }
     &:hover {
       color: @lightText;
@@ -48,14 +54,25 @@
     }
   }
   .left-button {
-    top: 50%; 
-    left: 0;
+    bottom: 0; 
+    left: 5%;
     transform: translate(0, -50%);
+
+    @media @desktop {
+      bottom: 50%;
+      left: 0;
+    }
   }
   .right-button {
-    top: 50%; 
-    right: 0;
+    bottom: 0; 
+    right: 5%;
     transform: translate(0, -50%);
+
+    @media @desktop {
+      bottom: 50%;
+      right: 0;
+    }
+
   }
 
   .slide-indicator-wrapper {
@@ -71,7 +88,7 @@
         background: @secondaryBgShading;
         border-radius: 50%;
         
-        @media @tablet, @desktop {
+        @media @desktop {
           width: 2rem;
           height: 2rem;
           margin: 0 2rem;
@@ -97,7 +114,5 @@
   // @keyframes slideRight {
   //   100% { right: 0; }
   // }
-
-
 
 }

@@ -1085,7 +1085,12 @@ nav .nav-link:hover {
   /* Target content */
   /* Animation */
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
+  .carousel {
+    height: 650px;
+  }
+}
+@media (min-width: 801px) {
   .carousel {
     height: 400px;
   }
@@ -1096,16 +1101,17 @@ nav .nav-link:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 5;
   font-size: 3rem;
   font-weight: bold;
   color: #7F969F;
   background: #FFFFFF;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   border-radius: 50%;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  z-index: 5;
+  opacity: 0.6;
   cursor: pointer;
 }
 @media (min-width: 801px) {
@@ -1122,14 +1128,26 @@ nav .nav-link:hover {
   background-color: #4195D2;
 }
 .carousel .left-button {
-  top: 50%;
-  left: 0;
+  bottom: 0;
+  left: 5%;
   transform: translate(0, -50%);
 }
+@media (min-width: 801px) {
+  .carousel .left-button {
+    bottom: 50%;
+    left: 0;
+  }
+}
 .carousel .right-button {
-  top: 50%;
-  right: 0;
+  bottom: 0;
+  right: 5%;
   transform: translate(0, -50%);
+}
+@media (min-width: 801px) {
+  .carousel .right-button {
+    bottom: 50%;
+    right: 0;
+  }
 }
 .carousel .slide-indicator-wrapper {
   display: flex;
@@ -1150,7 +1168,7 @@ nav .nav-link:hover {
   background: #7F969F;
   border-radius: 50%;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 801px) {
   .carousel .slide-indicator-wrapper .slide-indicator div {
     width: 2rem;
     height: 2rem;
