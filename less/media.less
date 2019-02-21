@@ -1,16 +1,38 @@
 .media-credits {
-  border: 1px solid red;
   width: 100%;
   max-width: 1430px;
-  margin: 500px 0;
+  margin: 20px 0;
   .flex(@direction:column;@align:center);
 
   #content {
     width: 90%;
-    max-width: 1000px;
-    table, th, td {
+    padding: 20px 0;
+    table * {
       border: 1px solid black;
       font-size: 1.6rem;
+
+      th {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      td {
+        padding: 1rem;
+      }
+    }
+
+    @media phone {
+      max-width: 500px;
+      padding: 5px 0;
+    }
+
+    @media @tablet {
+      max-width: 800px;
+      padding: 10px 0;
+    }
+
+    @media @desktop {
+      max-width: 1000px;
     }
   }
 }
