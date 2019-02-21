@@ -1005,6 +1005,7 @@ nav .nav-link:hover {
   border: 1px solid red;
   width: 100%;
   max-width: 1430px;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: normal;
