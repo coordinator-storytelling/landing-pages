@@ -830,8 +830,9 @@ nav .nav-link:hover {
   display: none;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
   padding: 10px;
+  position: relative;
+  animation: slideLeft 0.5s forwards;
 }
 @media (min-width: 501px) and (max-width: 800px), (min-width: 800px) {
   .home-page .testimonials .testimony {
@@ -891,6 +892,16 @@ nav .nav-link:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+@keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideRight {
+  100% {
+    right: 0;
   }
 }
 .about-page {
@@ -1030,9 +1041,9 @@ nav .nav-link:hover {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  justify-content: normal;
+  justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -1067,18 +1078,4 @@ nav .nav-link:hover {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
-}
-.carousel .testimony {
-  position: relative;
-  animation: slideLeft 0.5s forwards;
-}
-@keyframes slideLeft {
-  100% {
-    left: 0;
-  }
-}
-@keyframes slideRight {
-  100% {
-    right: 0;
-  }
 }
