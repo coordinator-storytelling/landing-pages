@@ -51,7 +51,7 @@
             .flex(column;@align:center);
             width: 45%;
             max-width: 200px;
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             color: @lightText;
             text-decoration: none;
 
@@ -86,12 +86,20 @@
         }
       }
   }
-
+#features {
+  width: 90%;
+  max-width: 1000px;
+  .flex(@direction:column;@align:center);
+  margin: 20px 0;
+  
+  p {
+    margin-top: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.0472rem;
+  }
+  
   #features-list {
-    width: 90%;
-    max-width: 1000px;
     .flex(@direction:column;@align:center);
-    margin: 20px 0;
 
     @media @tablet {
       .flex(@justify:space-between);
@@ -161,6 +169,8 @@
 
     }
   }  
+}
+
 
   .testimonials {
     .testimony {

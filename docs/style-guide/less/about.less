@@ -51,6 +51,7 @@
         max-width: 450px;
         .flex(@direction:column;@align:center);
         margin: 10px 0;
+        padding: 10px 0;
         background: @lightText;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -64,7 +65,11 @@
         }
 
         .team-member-img-wrapper {
-          width: 30%;
+          width: 35%;
+          padding: 10px;
+          border: 1px solid @darkText;
+          border-radius: 50%;
+          background: @primaryBgShading;
         }
 
         .team-member-name {
