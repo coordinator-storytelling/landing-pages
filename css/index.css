@@ -602,8 +602,10 @@ nav .nav-link:hover {
   align-items: baseline;
 }
 .site-footer .site-footer-wrapper .logo-wrapper .logo a {
-  text-decoration: none;
+  font-family: 'Dancing Script', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
   color: #FFFFFF;
 }
 @media (min-width: 801px) {
@@ -971,6 +973,7 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
   margin: 10px 0;
+  padding: 10px 0;
   background: #FFFFFF;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
@@ -985,7 +988,11 @@ nav .nav-link:hover {
   }
 }
 .about-page .team .team-list .team-member .team-member-img-wrapper {
-  width: 30%;
+  width: 35%;
+  padding: 10px;
+  border: 1px solid #595959;
+  border-radius: 50%;
+  background: #F5F8FA;
 }
 .about-page .team .team-list .team-member .team-member-name {
   font-size: 1.6rem;
