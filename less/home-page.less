@@ -35,14 +35,19 @@
 
       .headline {
         @media @desktop {
-          font-size: 6.4rem;
+          font-size: @xxl;
         }
       }
 
       .tagline {
-        @media @desktop {
-          font-size: 2rem;
+        @media @tablet {
+          font-size: @sm;
         }
+
+        @media @desktop {
+          font-size: @m;
+        }
+
       }
 
       .learn-more-btn-wrapper {
@@ -51,7 +56,7 @@
             .flex(column;@align:center);
             width: 45%;
             max-width: 200px;
-            font-size: 1.8rem;
+            font-size: @sm;
             color: @lightText;
             text-decoration: none;
 
@@ -63,7 +68,7 @@
               color: @primaryColor;
               background: @lightText;
               align-self: flex-start;
-              font-size: 2.2rem;
+              font-size: @m;
               padding: 10px;
               border-radius: 15px;
 
@@ -119,7 +124,7 @@
       max-width: 450px;
       .flex(@direction:column;@align:center);
       padding: 20px;
-      font-size: 1rem;
+      font-size: @xs;
       background: @lightText;
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -157,7 +162,7 @@
 
         a {
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: @s;
           font-weight: bold;
           color: @lightText;
 
@@ -207,10 +212,10 @@
       }
 
       blockquote {
-        font-size: 2rem;
+        font-size: @m;
 
         @media @desktop {
-          font-size: 3rem;
+          font-size: @ml;
         }
 
         &:before, &:after {
@@ -225,12 +230,12 @@
 
         & p {
           display: inline;
-          font-size: 1.6rem;
+          font-size: @s;
           font-style: italic;
           font-weight: 500;
           
           @media @desktop {
-            font-size: 2rem;
+            font-size: @m;
           }
         }
       }

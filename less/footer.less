@@ -29,20 +29,24 @@
       .logo {
         a {
           font-family: @logoFont;
-          font-size: 2rem;
+          font-size: @m;
           letter-spacing: 0.3rem;
           text-decoration: none;
           color: @headerFontColor;
 
+          @media @tablet {
+            font-size: @ml;
+          }
+
           @media @desktop {
-            font-size: 2.4rem;
+            font-size: @ml;
           }
         }
       }
     }
 
     .copyright {
-      font-size: 1.3rem;
+      font-size: @xs;
     }
 
     nav {
