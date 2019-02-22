@@ -1,28 +1,16 @@
 @import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
-/* Varela & Open Sans */
+/* Dancing Script */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v10/If2RXTr6YS-zF4S-kcSWSVi_szLgiuQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v10/If2SXTr6YS-zF4S-kcSWSVi_szpbr_QqqiY.ttf) format('truetype');
 }
 /* Roboto & Open Sans */
 @font-face {
@@ -426,13 +414,15 @@ img {
   }
 }
 .site-header .site-header-wrapper .logo a {
-  text-decoration: none;
+  font-family: 'Dancing Script', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 2.8rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
   color: #FFFFFF;
 }
 @media (min-width: 801px) {
   .site-header .site-header-wrapper .logo a {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 .site-header .site-header-wrapper .mainNav {
