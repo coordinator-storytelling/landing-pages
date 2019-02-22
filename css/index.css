@@ -22,7 +22,7 @@
   font-family: 'Varela Round';
   font-style: normal;
   font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v10/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
 }
 /* Roboto & Open Sans */
 @font-face {
@@ -718,7 +718,7 @@ nav .nav-link:hover {
   align-items: center;
   width: 45%;
   max-width: 200px;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -745,7 +745,7 @@ nav .nav-link:hover {
     display: none;
   }
 }
-.home-page #features-list {
+.home-page #features {
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -754,8 +754,19 @@ nav .nav-link:hover {
   align-items: center;
   margin: 20px 0;
 }
+.home-page #features p {
+  margin-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.0472rem;
+}
+.home-page #features #features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
 @media (min-width: 768px) and (max-width: 800px) {
-  .home-page #features-list {
+  .home-page #features #features-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -764,7 +775,7 @@ nav .nav-link:hover {
   }
 }
 @media (min-width: 801px) {
-  .home-page #features-list {
+  .home-page #features #features-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -772,10 +783,10 @@ nav .nav-link:hover {
     margin: 30px 0;
   }
 }
-.home-page #features-list * {
+.home-page #features #features-list * {
   margin: 5px 0;
 }
-.home-page #features-list .feature {
+.home-page #features #features-list .feature {
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -787,41 +798,41 @@ nav .nav-link:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 @media (min-width: 768px) and (max-width: 800px) {
-  .home-page #features-list .feature {
+  .home-page #features #features-list .feature {
     width: 48%;
   }
 }
 @media (min-width: 801px) {
-  .home-page #features-list .feature {
+  .home-page #features #features-list .feature {
     width: 30%;
   }
 }
-.home-page #features-list .feature * {
+.home-page #features #features-list .feature * {
   margin: 5px 0;
 }
-.home-page #features-list .feature .feature-img-wrapper {
+.home-page #features #features-list .feature .feature-img-wrapper {
   width: 40%;
   height: 150px;
 }
-.home-page #features-list .feature .feature-img-wrapper .feature-img {
+.home-page #features #features-list .feature .feature-img-wrapper .feature-img {
   max-width: 100%;
 }
-.home-page #features-list .feature p {
+.home-page #features #features-list .feature p {
   line-height: 1.5;
   letter-spacing: 0.0472rem;
 }
-.home-page #features-list .feature button {
+.home-page #features #features-list .feature button {
   width: 120px;
   margin: 20px 0;
   padding: 10px;
 }
-.home-page #features-list .feature button a {
+.home-page #features #features-list .feature button a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
   color: #FFFFFF;
 }
-.home-page #features-list .feature button a:hover {
+.home-page #features #features-list .feature button a:hover {
   color: #ED5D28;
 }
 .home-page .testimonials .testimony {
