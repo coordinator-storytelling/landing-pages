@@ -11,17 +11,21 @@ body * {
   font-family: @defaultFont;
 }
 
+body {
+  background: @primaryBgShading;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: @headingFont;
   color: @headingColor;
 }
 
 h1 {
-  font-size: 2.32rem;
+  font-size: 2.8rem;
   font-weight: bold;
-
+  
     @media @desktop {
-      font-size: 2.8rem;
+      font-size: 3.6rem;
   }
 }
 
@@ -102,25 +106,29 @@ button {
   .buttonSize(@width:100px; @height:auto;@fontSize:1rem);
   .buttonShape(@bRadius:15px; @paddingHeight:5px; @paddingWidth:5px);  
   .buttonStyle(@textAlign:center;@decor:none;@cursor:pointer);
-  .hoverEffect(@bgColor:@primaryColor);
 
   @media @desktop {
     .buttonSize(@width:100px; @height:auto;@fontSize:1.2rem);
   }
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
-    max-width: 500px;
     width: 100%;
     margin: 0 auto;
 
     @media @desktop {
-      max-width: 991px;
+      max-width: 1430px;
     }
 }
 
 .btn-cta {
-  .buttonColor(@fontColor:@lightText,@bgColor:@accent);
-  .hoverEffect(@bgColor:@accent);
+  .buttonColor(@fontColor:@lightText;@bgColor:@accent);
+  .buttonStyle(@fontWeight:900);
+  .hoverEffect(@fontColor:@lightText;@bgColor:@accent);
 }
 

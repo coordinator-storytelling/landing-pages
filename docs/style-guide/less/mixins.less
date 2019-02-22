@@ -52,25 +52,19 @@
   .buttonSize(@width:auto; @height:auto;@fontSize: 1rem;);
   .buttonShape(@bRadius; @paddingHeight; @paddingWidth;);  
   .buttonStyle(@textAlign:center;@decor:none;@cursor:pointer);
-  //.hoverEffect(@fontColor; @bgColor);
-  .hoverEffect(@bgColor);
 }
 
 //Animations
 //Version 1
-// .hoverEffect(@fontColor; @bgColor) {
+.hoverEffect(@fontColor; @bgColor) {
+  &:hover {
+    color: @bgColor;
+    background: @fontColor;
+    border: 1px solid @bgColor;
+  }
+}  
+// .hoverEffect(@bgColor) {
 //   &:hover {
-//     color: @bgColor;
-//     background: @fontColor;
-//     // color: @fontColor;
-//     // background: @bgColor;
-//     border: 1px solid @bgColor;
-//     //transform: scale(1.15);
 //     background: lighten(@bgColor, 10%);
 //   }
-// }  
-.hoverEffect(@bgColor) {
-  &:hover {
-    background: lighten(@bgColor, 10%);
-  }
-}
+// }
