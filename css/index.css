@@ -1070,6 +1070,106 @@ nav .nav-link:hover {
     font-size: 1rem;
   }
 }
+.headline {
+  max-width: 991px;
+  margin: 20px auto;
+  text-align: center;
+}
+.style-guide {
+  max-width: 991px;
+  background: #F5F8FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  margin: 0 auto;
+}
+.style-guide .style-guide-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.style-guide .style-guide-info section {
+  width: 95%;
+  margin: 10px auto;
+  padding: 15px;
+  background: #FFFFFF;
+  display: grid;
+}
+.style-guide .style-guide-info section .item {
+  margin-top: 20px;
+}
+.style-guide .style-guide-info section .item .description {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+.style-guide .style-guide-info section .item .sample {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+.style-guide .style-guide-info .style-guide-menu {
+  flex: 0 0 15%;
+  margin: 10px 0;
+}
+.style-guide .style-guide-info .style-guide-menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  background: #FFFFFF;
+  padding: 10px;
+}
+.style-guide .style-guide-info .style-guide-menu nav a {
+  width: 100%;
+  padding: 20px 0;
+  color: #0F5080;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #F5F8FA;
+}
+.style-guide .style-guide-info .style-guide-menu nav a:visited {
+  color: #0F5080;
+}
+.style-guide .style-guide-info .style-guide-content {
+  flex: 0 0 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+}
+.style-guide .style-guide-info #typography .sample {
+  width: 80%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #F5F8FA;
+}
+.style-guide .style-guide-info #color-palette .sample {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #F5F8FA;
+}
+.style-guide .style-guide-info #page-elements .link-wrapper {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  padding: 10px 0;
+  border: 1px solid #0F5080;
+}
+.style-guide .style-guide-info #page-elements nav {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+}
+.style-guide .style-guide-info #sitewide-components .item {
+  overflow-x: scroll;
+}
 .hidden {
   display: none;
 }
