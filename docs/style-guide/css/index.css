@@ -1,28 +1,16 @@
 @import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
-/* Varela & Open Sans */
+/* Dancing Script */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v10/If2RXTr6YS-zF4S-kcSWSVi_szLgiuQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v10/If2SXTr6YS-zF4S-kcSWSVi_szpbr_QqqiY.ttf) format('truetype');
 }
 /* Roboto & Open Sans */
 @font-face {
@@ -231,8 +219,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Varela Round', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
-  color: #0F5080;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
+  color: #595959;
 }
 h1 {
   font-size: 2.8rem;
@@ -426,13 +414,15 @@ img {
   }
 }
 .site-header .site-header-wrapper .logo a {
-  text-decoration: none;
+  font-family: 'Dancing Script', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 2.8rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
   color: #FFFFFF;
 }
 @media (min-width: 801px) {
   .site-header .site-header-wrapper .logo a {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 .site-header .site-header-wrapper .mainNav {
@@ -546,6 +536,7 @@ nav .nav-link:hover {
 }
 .demo2 {
   max-width: 500px;
+  color: #0F5080;
   background: #F5F8FA;
 }
 @media (min-width: 768px) and (max-width: 800px) {
@@ -558,16 +549,16 @@ nav .nav-link:hover {
     max-width: 1430px;
   }
 }
-.demo2 .logo a {
-  color: #03100D;
+.demo2 .site-header-wrapper .logo a {
+  color: #0F5080;
 }
-.demo2 nav {
+.demo2 .site-header-wrapper .mainNav {
   background: #F5F8FA;
 }
-.demo2 nav a {
-  color: #03100D;
+.demo2 .site-header-wrapper .mainNav a {
+  color: #0F5080;
 }
-.demo2 nav a:last-child {
+.demo2 .site-header-wrapper .mainNav a:last-child {
   color: #FFFFFF;
   background: #ED5D28;
   border-radius: 3px;
@@ -612,8 +603,10 @@ nav .nav-link:hover {
   align-items: baseline;
 }
 .site-footer .site-footer-wrapper .logo-wrapper .logo a {
-  text-decoration: none;
+  font-family: 'Dancing Script', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 2rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
   color: #FFFFFF;
 }
 @media (min-width: 801px) {
@@ -718,7 +711,7 @@ nav .nav-link:hover {
   align-items: center;
   width: 45%;
   max-width: 200px;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -745,7 +738,7 @@ nav .nav-link:hover {
     display: none;
   }
 }
-.home-page #features-list {
+.home-page #features {
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -754,8 +747,19 @@ nav .nav-link:hover {
   align-items: center;
   margin: 20px 0;
 }
+.home-page #features p {
+  margin-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.0472rem;
+}
+.home-page #features #features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
 @media (min-width: 768px) and (max-width: 800px) {
-  .home-page #features-list {
+  .home-page #features #features-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -764,7 +768,7 @@ nav .nav-link:hover {
   }
 }
 @media (min-width: 801px) {
-  .home-page #features-list {
+  .home-page #features #features-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -772,10 +776,10 @@ nav .nav-link:hover {
     margin: 30px 0;
   }
 }
-.home-page #features-list * {
+.home-page #features #features-list * {
   margin: 5px 0;
 }
-.home-page #features-list .feature {
+.home-page #features #features-list .feature {
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -787,41 +791,41 @@ nav .nav-link:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 @media (min-width: 768px) and (max-width: 800px) {
-  .home-page #features-list .feature {
+  .home-page #features #features-list .feature {
     width: 48%;
   }
 }
 @media (min-width: 801px) {
-  .home-page #features-list .feature {
+  .home-page #features #features-list .feature {
     width: 30%;
   }
 }
-.home-page #features-list .feature * {
+.home-page #features #features-list .feature * {
   margin: 5px 0;
 }
-.home-page #features-list .feature .feature-img-wrapper {
+.home-page #features #features-list .feature .feature-img-wrapper {
   width: 40%;
   height: 150px;
 }
-.home-page #features-list .feature .feature-img-wrapper .feature-img {
+.home-page #features #features-list .feature .feature-img-wrapper .feature-img {
   max-width: 100%;
 }
-.home-page #features-list .feature p {
+.home-page #features #features-list .feature p {
   line-height: 1.5;
   letter-spacing: 0.0472rem;
 }
-.home-page #features-list .feature button {
+.home-page #features #features-list .feature button {
   width: 120px;
   margin: 20px 0;
   padding: 10px;
 }
-.home-page #features-list .feature button a {
+.home-page #features #features-list .feature button a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
   color: #FFFFFF;
 }
-.home-page #features-list .feature button a:hover {
+.home-page #features #features-list .feature button a:hover {
   color: #ED5D28;
 }
 .home-page .testimonials .testimony {
@@ -970,6 +974,7 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
   margin: 10px 0;
+  padding: 10px 0;
   background: #FFFFFF;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
@@ -984,7 +989,11 @@ nav .nav-link:hover {
   }
 }
 .about-page .team .team-list .team-member .team-member-img-wrapper {
-  width: 30%;
+  width: 35%;
+  padding: 10px;
+  border: 1px solid #595959;
+  border-radius: 50%;
+  background: #F5F8FA;
 }
 .about-page .team .team-list .team-member .team-member-name {
   font-size: 1.6rem;
@@ -1065,6 +1074,7 @@ nav .nav-link:hover {
 .headline {
   max-width: 991px;
   margin: 20px auto;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   text-align: center;
 }
 .style-guide {

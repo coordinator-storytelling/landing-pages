@@ -3,11 +3,11 @@
 const fontList = {
   logoFont : {
     name: "Logo Font",
-    description: "'Varela Round', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
+    description: "'Dancing Script', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
     sample: "Acme, Inc."},
   headingFont : {
     name: "Heading Font",
-    description: "'Varela Round', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
+    description: "Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
     sample: "The quick, brown fox"
   },
   defaultFont: {
@@ -32,7 +32,7 @@ const colorPalette = {
   },
   primaryBgShading: {
     name: "Primary Background Shading",
-    description: '#D1DAE5',
+    description: '#F5F8FA',
     get sample () { return this.description },
   },
   secondaryColor: {
@@ -47,7 +47,7 @@ const colorPalette = {
   },
   accent: {
     name: "Accent",
-    description: '#FF7F50',
+    description: '#ED5D28',
     get sample() { return this.description },
   },
   emphasis: {
