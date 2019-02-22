@@ -163,7 +163,8 @@ nav {
 }
 
 .demo2 {
- max-width: 500px;
+  max-width: 500px;
+  color: @primaryDark;
   background: @primaryBgShading;
 
   @media @tablet {
@@ -174,26 +175,29 @@ nav {
     max-width: 1430px;
   }
 
-  .logo {
-    a {
-      color: @emphasis;
+  .site-header-wrapper {
+    .logo {
+      a {
+        color: @primaryDark;
+      }
+
     }
 
-  }
+    .mainNav {
+      background: @primaryBgShading;
 
-  nav {
-    background: @primaryBgShading;
+      a {
+        color: @primaryDark;
 
-    a {
-      color: @emphasis;
-
-      &:last-child {
-        color: @headerFontColor;
-        background: @accent;
-        border-radius: 3px;
+        &:last-child {
+          color: @headerFontColor;
+          background: @accent;
+          border-radius: 3px;
+        }
       }
     }
   }
+
 }
 
 
