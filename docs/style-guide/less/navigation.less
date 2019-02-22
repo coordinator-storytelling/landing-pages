@@ -37,13 +37,17 @@
 
       a {
         font-family: @logoFont;
-        font-size: 2.8rem;
+        font-size: @ml;
         letter-spacing: 0.3rem;
         text-decoration: none;
         color: @headerFontColor;
         
+        @media @tablet {
+          font-size: @l;
+        }
+
         @media @desktop {
-          font-size: 5rem;
+          font-size: @xl;
         }
       }
 
@@ -64,7 +68,7 @@
         padding: 20px 10px;
         text-align: center;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: @s;
         font-weight: 600;
         line-height: 2.6rem;
         letter-spacing: 0.2rem;
@@ -96,7 +100,7 @@
           background: @accent;
           border-radius: 3px;
           margin-bottom: 0;
-          font-size: 1.8rem;
+          font-size: @sm;
 
           &:hover {
             color: @accent;
@@ -108,7 +112,7 @@
     }
 
     #openMenu {
-      font-size: 2.5rem;
+      font-size: @ml;
 
       @media @tablet, @desktop {
         display: none;
@@ -116,7 +120,7 @@
     }
 
     #closeMenu {
-      font-size: 2.5rem;
+      font-size: @ml;
       display: none;
     }
   }
@@ -132,7 +136,7 @@ nav {
   .nav-link {
     margin: 0 2.78vw;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: @s;
     font-weight: semi-bold;
     letter-spacing: 0.12rem;
     color: @headerFontColor;
@@ -163,8 +167,7 @@ nav {
 }
 
 .demo2 {
-  max-width: 500px;
-  color: @primaryDark;
+ max-width: 500px;
   background: @primaryBgShading;
 
   @media @tablet {
@@ -175,29 +178,26 @@ nav {
     max-width: 1430px;
   }
 
-  .site-header-wrapper {
-    .logo {
-      a {
-        color: @primaryDark;
-      }
-
+  .logo {
+    a {
+      color: @emphasis;
     }
 
-    .mainNav {
-      background: @primaryBgShading;
+  }
 
-      a {
-        color: @primaryDark;
+  nav {
+    background: @primaryBgShading;
 
-        &:last-child {
-          color: @headerFontColor;
-          background: @accent;
-          border-radius: 3px;
-        }
+    a {
+      color: @emphasis;
+
+      &:last-child {
+        color: @headerFontColor;
+        background: @accent;
+        border-radius: 3px;
       }
     }
   }
-
 }
 
 
