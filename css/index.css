@@ -688,27 +688,39 @@ nav .nav-link:hover {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: normal;
+  align-items: center;
 }
 .home-page .intro .intro-wrapper * {
   margin: 10px 0;
 }
-.home-page .intro .intro-wrapper .headline,
-.home-page .intro .intro-wrapper .tagline {
+.home-page .intro .intro-wrapper .intro-text {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+}
+.home-page .intro .intro-wrapper .intro-text .headline,
+.home-page .intro .intro-wrapper .intro-text .tagline {
+  padding: 0 auto;
   color: #FFFFFF;
+  text-align: left;
+}
+.home-page .intro .intro-wrapper .intro-text .headline {
+  font-size: 3rem;
 }
 @media (min-width: 801px) {
-  .home-page .intro .intro-wrapper .headline {
+  .home-page .intro .intro-wrapper .intro-text .headline {
     font-size: 6rem;
   }
 }
 @media (min-width: 768px) {
-  .home-page .intro .intro-wrapper .tagline {
+  .home-page .intro .intro-wrapper .intro-text .tagline {
     font-size: 1.8rem;
   }
 }
 @media (min-width: 801px) {
-  .home-page .intro .intro-wrapper .tagline {
+  .home-page .intro .intro-wrapper .intro-text .tagline {
     font-size: 2rem;
   }
 }
@@ -723,9 +735,9 @@ nav .nav-link:hover {
   flex-direction: column;
   justify-content: normal;
   align-items: center;
-  width: 45%;
+  width: 100%;
   max-width: 200px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 15px;
   font-size: 1.8rem;
   color: #1363A8;
@@ -737,7 +749,6 @@ nav .nav-link:hover {
 }
 @media (min-width: 768px) {
   .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn {
-    padding: 10px;
     align-self: flex-start;
     font-size: 2rem;
   }
