@@ -6,6 +6,10 @@ The Landing Page serves two purposes:
   2. Establish an online presence that attracts donors and volunteeers.
 
 ---
+## Development
+This site is built in HTML, CSS, and vanilla Javascript.
+
+---
 ## Information Architecture
 
 ### SITE WIDE
@@ -50,3 +54,7 @@ The Landing Page serves two purposes:
   * Role
   * GitHub Link
   * LinkedIn Link
+
+
+**Copyright 2019**
+[Legal Stuff](https://bountifulapp.netlify.com/docs/media.html)
