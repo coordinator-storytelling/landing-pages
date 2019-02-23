@@ -1,4 +1,4 @@
-const system = {
+const theme = {
   color: {
     primaryColor: '#1363A8',
     primaryDark: '#0F5080',
@@ -10,7 +10,24 @@ const system = {
     darkText: '#595959',
     lightText: '#FFFFFF'
   },
-  
+
+  colorScheme: {
+    logoColor: () => { return theme.color.lightText },
+    headerBgColor: () => { return theme.color.primaryColor },
+    headerFontColor: () => { return theme.color.lightText },
+    footerBgColor: () => { return theme.color.headerBgColor },
+    footerFontColor: () => { return theme.color.headerFontColor },
+    headingColor: () => { return theme.color.darkText },
+    defaultFontColor: () => { return theme.color.darkText },
+    defaultLinkColor: () => { return theme.color.secondaryColor }
+  },
+
+  fontStyles: {
+    logoFont: "'Dancing Script', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
+    headingFont: "Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif",
+    defaultFont: "'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif"
+  },
+
   fontSizing: { // Based on CSS default font-resizing of 62.5%
     xs: '1.3rem', // base size for mobile view
     s: '1.6rem', // base size for text
@@ -24,12 +41,12 @@ const system = {
 
   breakpoints: [
     '(max-width: 500px)',
-    '(max-width: 800px)',
-    '(max-width: 1430px)'
+    '(min-width: 768px)',
+    '(min-width: 801px)'
   ],
   // for media queries -- express them as @media ${system.breakpoints[0]} {styles here}
   // in the arr, the first is for mobile, second is for portrait tablet, third is for desktop
 
 }
 
-export default system
+export default theme
