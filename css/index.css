@@ -226,7 +226,7 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   h1 {
     font-size: 4rem;
   }
@@ -250,7 +250,7 @@ h3 {
   }
 }
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 @media (min-width: 801px) {
@@ -308,7 +308,7 @@ button {
   border: 1px solid #1363A8;
   width: 100px;
   height: auto;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 5px 5px;
   border-radius: 15px;
   font-weight: 600;
@@ -324,7 +324,7 @@ button {
   button {
     width: 100px;
     height: auto;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 img {
@@ -408,7 +408,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .site-header .site-header-wrapper .logo {
     width: auto;
   }
@@ -437,7 +437,7 @@ img {
   align-items: center;
   display: none;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .site-header .site-header-wrapper .mainNav {
     display: flex;
     flex-direction: row;
@@ -460,7 +460,7 @@ img {
   white-space: nowrap;
   border-bottom: 1px solid #0F5080;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .site-header .site-header-wrapper .mainNav a {
     width: auto;
     margin: 0 1.39vw;
@@ -475,7 +475,7 @@ img {
 .site-header .site-header-wrapper .mainNav a:first-child {
   border-top: 1px solid #0F5080;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .site-header .site-header-wrapper .mainNav a:first-child {
     border: none;
   }
@@ -494,7 +494,7 @@ img {
 .site-header .site-header-wrapper #openMenu {
   font-size: 3rem;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .site-header .site-header-wrapper #openMenu {
     display: none;
   }
@@ -517,7 +517,7 @@ nav .nav-link {
   color: #FFFFFF;
   white-space: nowrap;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   nav .nav-link {
     margin: 0 1.39vw;
   }
@@ -732,7 +732,7 @@ nav .nav-link:hover {
 .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn:visited {
   color: #FFFFFF;
 }
-@media (min-width: 768px) and (max-width: 800px), (min-width: 801px) {
+@media (min-width: 768px) and (max-width: 800px) {
   .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn {
     color: #1363A8;
     background: #FFFFFF;

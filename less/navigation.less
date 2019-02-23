@@ -31,7 +31,7 @@
       padding: 10px 0;
       .flex(@justify:space-between;@align:center);
 
-      @media @tablet, @desktop {
+      @media @tablet {
         width: auto;
       }
 
@@ -57,7 +57,7 @@
       .flex(@direction:column;@justify:center;@align:center);
       display: none;
       
-      @media @tablet, @desktop {
+      @media @tablet {
         .flex(@justify:space-evenly; @align:baseline);
         margin-bottom: 10px;
       }
@@ -76,7 +76,7 @@
         white-space: nowrap;
         border-bottom: 1px solid @primaryDark;
 
-        @media @tablet, @desktop {
+        @media @tablet {
           width: auto;
           margin: 0 1.39vw;
           padding: 12px;
@@ -90,7 +90,7 @@
 
         &:first-child {
           border-top: 1px solid @primaryDark;
-          @media @tablet, @desktop {
+          @media @tablet {
             border: none;
           }
         }
@@ -114,7 +114,7 @@
     #openMenu {
       font-size: @ml;
 
-      @media @tablet, @desktop {
+      @media @tablet {
         display: none;
       }
     }
@@ -142,7 +142,7 @@ nav {
     color: @headerFontColor;
     white-space: nowrap;
 
-    @media @tablet, @desktop {
+    @media @tablet {
       margin: 0 1.39vw;
     }
 
