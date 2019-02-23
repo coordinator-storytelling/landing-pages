@@ -56,21 +56,22 @@
             .flex(column;@align:center);
             width: 45%;
             max-width: 200px;
+            padding: 5px;
+            border-radius: 15px;
             font-size: @sm;
-            color: @lightText;
+            color: @primaryColor;
+            background: @lightText;
             text-decoration: none;
 
             &:visited {
-              color: @lightText;
+              color: @primaryColor;
             }
 
             @media @tablet {
-              color: @primaryColor;
-              background: @lightText;
+              padding: 10px;
               align-self: flex-start;
               font-size: @m;
-              padding: 10px;
-              border-radius: 15px;
+
 
               &:visited {
                 color: @primaryColor;
@@ -80,11 +81,6 @@
                 color: @lightText;
                 background: @primaryColor;
               }
-
-              i {
-                display: none;
-              }
-
 
             }
           }

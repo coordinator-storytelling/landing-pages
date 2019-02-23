@@ -725,21 +725,21 @@ nav .nav-link:hover {
   align-items: center;
   width: 45%;
   max-width: 200px;
+  padding: 5px;
+  border-radius: 15px;
   font-size: 1.8rem;
-  color: #FFFFFF;
+  color: #1363A8;
+  background: #FFFFFF;
   text-decoration: none;
 }
 .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn:visited {
-  color: #FFFFFF;
+  color: #1363A8;
 }
 @media (min-width: 768px) {
   .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn {
-    color: #1363A8;
-    background: #FFFFFF;
+    padding: 10px;
     align-self: flex-start;
     font-size: 2rem;
-    padding: 10px;
-    border-radius: 15px;
   }
   .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn:visited {
     color: #1363A8;
@@ -747,9 +747,6 @@ nav .nav-link:hover {
   .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn:hover {
     color: #FFFFFF;
     background: #1363A8;
-  }
-  .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn i {
-    display: none;
   }
 }
 .home-page #features {
