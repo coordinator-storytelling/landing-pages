@@ -1057,7 +1057,9 @@ nav .nav-link:hover {
 }
 .media-credits #content {
   width: 90%;
+  max-width: 1000px;
   padding: 20px 0;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .media-credits #content {
