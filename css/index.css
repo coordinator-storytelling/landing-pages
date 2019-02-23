@@ -226,7 +226,7 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -384,7 +384,7 @@ img {
   justify-content: center;
   align-items: normal;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper {
     display: flex;
     flex-direction: row;
@@ -408,7 +408,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper .logo {
     width: auto;
   }
@@ -420,7 +420,7 @@ img {
   text-decoration: none;
   color: #FFFFFF;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper .logo a {
     font-size: 4rem;
   }
@@ -437,7 +437,7 @@ img {
   align-items: center;
   display: none;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper .mainNav {
     display: flex;
     flex-direction: row;
@@ -460,7 +460,7 @@ img {
   white-space: nowrap;
   border-bottom: 1px solid #0F5080;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper .mainNav a {
     width: auto;
     margin: 0 1.39vw;
@@ -475,7 +475,7 @@ img {
 .site-header .site-header-wrapper .mainNav a:first-child {
   border-top: 1px solid #0F5080;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper .mainNav a:first-child {
     border: none;
   }
@@ -494,7 +494,7 @@ img {
 .site-header .site-header-wrapper #openMenu {
   font-size: 3rem;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-header .site-header-wrapper #openMenu {
     display: none;
   }
@@ -517,7 +517,7 @@ nav .nav-link {
   color: #FFFFFF;
   white-space: nowrap;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   nav .nav-link {
     margin: 0 1.39vw;
   }
@@ -529,7 +529,7 @@ nav .nav-link:hover {
 .demo {
   max-width: 500px;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .demo {
     max-width: 800px;
   }
@@ -543,7 +543,7 @@ nav .nav-link:hover {
   max-width: 500px;
   background: #F5F8FA;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .demo2 {
     max-width: 800px;
   }
@@ -613,7 +613,7 @@ nav .nav-link:hover {
   text-decoration: none;
   color: #FFFFFF;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .site-footer .site-footer-wrapper .logo-wrapper .logo a {
     font-size: 3rem;
   }
@@ -702,7 +702,7 @@ nav .nav-link:hover {
     font-size: 6rem;
   }
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .home-page .intro .intro-wrapper .tagline {
     font-size: 1.8rem;
   }
@@ -732,7 +732,7 @@ nav .nav-link:hover {
 .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn:visited {
   color: #FFFFFF;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .home-page .intro .intro-wrapper .learn-more-btn-wrapper .learn-more-btn {
     color: #1363A8;
     background: #FFFFFF;
@@ -772,7 +772,7 @@ nav .nav-link:hover {
   justify-content: normal;
   align-items: center;
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .home-page #features #features-list {
     display: flex;
     flex-direction: row;
@@ -804,7 +804,7 @@ nav .nav-link:hover {
   background: #FFFFFF;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .home-page #features #features-list .feature {
     width: 48%;
   }
@@ -963,7 +963,7 @@ nav .nav-link:hover {
     border-top: 1px solid #0F5080;
   }
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .about-page .team .team-list {
     display: flex;
     flex-direction: row;
@@ -992,7 +992,7 @@ nav .nav-link:hover {
   background: #FFFFFF;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .about-page .team .team-list .team-member {
     flex: 0 0 48%;
   }
@@ -1208,7 +1208,7 @@ nav .nav-link:hover {
   /* Target content */
   /* Animation */
 }
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) {
   .carousel {
     height: 650px;
   }
