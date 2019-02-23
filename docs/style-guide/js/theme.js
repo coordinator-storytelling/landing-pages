@@ -1,61 +1,16 @@
 const system = {
-  colors : {
-    primaryColor: {
-      name: "Primary Color",
-      value: '#1363A8',
-      description: '#1363A8',
-      get sample() { return this.description },
-    },
-    primaryDark: {
-      name: "Primary Dark",
-      value: '#0F5080',
-      description: '#0F5080',
-      get sample() { return this.description },
-    },
-    primaryBgShading: {
-      name: "Primary Background Shading",
-      value: '#F5F8FA',
-      description: '#F5F8FA',
-      get sample() { return this.description },
-    },
-    secondaryColor: {
-      name: "Seconday Color",
-      value: '#4195D2',
-      description: '#4195D2',
-      get sample() { return this.description },
-    },
-    secondaryBgShading: {
-      name: "Secondary Background Shading",
-      value: '#7F969F',
-      description: '#7F969F',
-      get sample() { return this.description },
-    },
-    accent: {
-      name: "Accent",
-      value: '#ED5D28',
-      description: '#ED5D28',
-      get sample() { return this.description },
-    },
-    emphasis: {
-      name: "Emphasis",
-      value: '#03100D',
-      description: '#03100D',
-      get sample() { return this.description },
-    },
-    darkText: {
-      name: "Text (Dark)",
-      value: '#595959',
-      description: '#595959',
-      get sample() { return this.description },
-    },
-    lightText: {
-      name: "Text (Light)",
-      value: '#FFFFFF',
-      description: '#FFFFFF',
-      get sample() { return this.description },
-    }
+  color: {
+    primaryColor: '#1363A8',
+    primaryDark: '#0F5080',
+    primaryBgShading: '#F5F8FA',
+    secondaryColor: '#4195D2',
+    secondaryBgShading: '#7F969F',
+    accent: '#ED5D28',
+    emphasis: '#03100D',
+    darkText: '#595959',
+    lightText: '#FFFFFF'
   },
-
+  
   fontSizing: { // Based on CSS default font-resizing of 62.5%
     xs: '1.3rem', // base size for mobile view
     s: '1.6rem', // base size for text
