@@ -42,13 +42,13 @@ class Carousel {
       this.testimonials[this.displayIndex].style.display = 'flex'
       this.testimonials[this.displayIndex].style.left = 'initial'
       this.testimonials[this.displayIndex].style.right = '-100%'
-      this.testimonials[this.displayIndex].style.animation = 'slideRight 0.5s forwards'
+      this.testimonials[this.displayIndex].style.animation = 'slideRight 1s forwards'
 
     } else {
       this.testimonials[this.displayIndex].style.display = 'flex'
       this.testimonials[this.displayIndex].style.right = 'initial'
       this.testimonials[this.displayIndex].style.left = '-100%'
-      this.testimonials[this.displayIndex].style.animation = 'slideLeft 0.5s forwards'
+      this.testimonials[this.displayIndex].style.animation = 'slideLeft 1s forwards'
     }
 
     this.highlightDot(this.displayIndex)

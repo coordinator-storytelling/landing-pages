@@ -846,7 +846,7 @@ nav .nav-link:hover {
   align-items: center;
   padding: 10px;
   position: relative;
-  animation: slideLeft 0.5s forwards;
+  animation: slideLeft 1s forwards;
 }
 @media (min-width: 801px) {
   .home-page #testimonials .testimony {
