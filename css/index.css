@@ -815,8 +815,7 @@ nav .nav-link:hover {
   margin: 5px 0;
 }
 .home-page #features #features-list .feature .feature-img-wrapper {
-  width: 40%;
-  height: 150px;
+  width: 45%;
 }
 .home-page #features #features-list .feature .feature-img-wrapper .feature-img {
   max-width: 100%;
