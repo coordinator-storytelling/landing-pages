@@ -1,9 +1,9 @@
 | Image Filename | Source / Creator | License |
 | -------------- | ------------- | ----- |
-| bannerdark.png     | Evoria Studio  | [Creative Commons](https://www.iconfinder.com/icons/3162599/approve_check_good_success_tick_icon)  |
-| lines.svg      | Kam Bowman  | MIT (projectl icense)
-| circle.svg     | Kam Bowman  | MIT (project license) |
-| header.svg     | Paco Vitiello & Davide Pacilio  | [GPL](https://cruip.com/terms/) |
+| bannerdark.png     | Department of Foreign Affairs and Trade  | [Creative Commons](https://creativecommons.org/licenses/by/2.0/)  |
+| notebook.png      | Pixabay  | [Pixabay License](https://pixabay.com/en/service/license/) |
+| share-symbol.svg  | Pixabay  | [Pixabay License](https://pixabay.com/en/service/license/) |
+| community.svg     | Pixabay  | [Pixabay License](https://pixabay.com/en/service/license/)|
 | hero.svg       | Paco Vitiello & Davide Pacilio  | [GPL](https://cruip.com/terms/) |
 | logo2.png      | Rahul Desai, icon from AlePio  | [Creative Commons](https://thenounproject.com/search/?q=clock&i=1971204)  |
 | rings.svg      | Sam Herbert  | [MIT](https://github.com/SamHerbert/SVG-Loaders)  |
