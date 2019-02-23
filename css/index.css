@@ -862,9 +862,21 @@ nav .nav-link:hover {
   margin: 5px 0;
 }
 @media (min-width: 801px) {
-  .home-page #testimonials .testimony .img-content-wrapper,
   .home-page #testimonials .testimony .text-content {
-    flex: 0 0 46%;
+    flex: 0 0 60%;
+  }
+}
+.home-page #testimonials .testimony .img-content-wrapper {
+  width: 65%;
+}
+@media (min-width: 768px) {
+  .home-page #testimonials .testimony .img-content-wrapper {
+    width: 60%;
+  }
+}
+@media (min-width: 801px) {
+  .home-page #testimonials .testimony .img-content-wrapper {
+    width: 35%;
   }
 }
 .home-page #testimonials .testimony .img-content-wrapper img {
@@ -1192,13 +1204,14 @@ nav .nav-link:hover {
   /* Size and position settings */
   width: 90%;
   max-width: 1000px;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: normal;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 10px 0;
   border-radius: 15px;
   background: #FFFFFF;
   /* Tablet and Desktop View */
@@ -1208,11 +1221,12 @@ nav .nav-link:hover {
 @media (min-width: 768px) {
   .carousel {
     height: 650px;
+    justify-content: center;
   }
 }
 @media (min-width: 801px) {
   .carousel {
-    height: 400px;
+    height: 500px;
   }
 }
 .carousel .left-button,

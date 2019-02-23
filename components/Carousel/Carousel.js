@@ -79,7 +79,7 @@ document.querySelector('.slide-indicator div').style.backgroundColor = '#4195D2'
 const autoPlay = () => {
   setInterval(() => {
     carousel.goForward()
-  }, 3000)
+  }, 6000)
 }
 
 autoPlay()

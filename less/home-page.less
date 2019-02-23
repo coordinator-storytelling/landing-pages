@@ -197,11 +197,20 @@
         margin: 5px 0;
       }
 
-      .img-content-wrapper, .text-content {
-        @media @desktop {flex: 0 0 46%;}
+      .text-content {
+        @media @desktop {flex: 0 0 60%;}
       }
 
       .img-content-wrapper {
+        width: 65%;
+
+        @media @tablet {
+          width: 60%;
+        }
+
+        @media @desktop {
+          width: 35%;
+        }
         img {
           border-radius: 10px;
         }
