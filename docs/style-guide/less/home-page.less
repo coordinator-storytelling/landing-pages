@@ -23,29 +23,36 @@
     .intro-wrapper {
       width: 90%;
       max-width: 1000px;
-      .flex(@direction:column;);
+      .flex(@direction:column;@align:center);
 
       & * {
         margin: 10px 0;
       }
 
-      .headline, .tagline {
-        color: @lightText;
-      }
-
-      .headline {
-        @media @desktop {
-          font-size: @xxl;
-        }
-      }
-
-      .tagline {
-        @media @tablet {
-          font-size: @sm;
+      .intro-text {
+        max-width: 900px;
+        .flex(@direction:column);
+        .headline, .tagline {
+          padding: 0 auto;
+          color: @lightText;
+          text-align: left;
         }
 
-        @media @desktop {
-          font-size: @m;
+        .headline {
+          font-size: @ml;
+          @media @desktop {
+            font-size: @xxl;
+          }
+        }
+
+        .tagline {
+          @media @tablet {
+            font-size: @sm;
+          }
+
+          @media @desktop {
+            font-size: @m;
+          }
         }
 
       }
@@ -54,23 +61,23 @@
         .flex(@justify:center);
           .learn-more-btn {
             .flex(column;@align:center);
-            width: 45%;
+            width: 100%;
             max-width: 200px;
+            padding: 10px;
+            border-radius: 15px;
             font-size: @sm;
-            color: @lightText;
+            color: @primaryColor;
+            background: @lightText;
             text-decoration: none;
 
             &:visited {
-              color: @lightText;
+              color: @primaryColor;
             }
 
-            @media @tablet, @desktop {
-              color: @primaryColor;
-              background: @lightText;
+            @media @tablet {
               align-self: flex-start;
               font-size: @m;
-              padding: 10px;
-              border-radius: 15px;
+
 
               &:visited {
                 color: @primaryColor;
@@ -81,21 +88,17 @@
                 background: @primaryColor;
               }
 
-              i {
-                display: none;
-              }
-
-
             }
           }
         }
       }
   }
+
 #features {
   width: 90%;
   max-width: 1000px;
   .flex(@direction:column;@align:center);
-  margin: 20px 0;
+  margin: 40px 0;
   
   p {
     margin-top: 10px;
@@ -142,8 +145,7 @@
       }
 
       .feature-img-wrapper {
-        width: 40%;
-        height: 150px;
+        width: 45%;
 
         .feature-img {
           max-width: 100%;
@@ -155,29 +157,28 @@
         letter-spacing: 0.0472rem;
       }
 
-      button {
-        width: 120px;
-        margin: 20px 0;
-        padding: 10px;
+    }
+  }
 
-        a {
-          text-decoration: none;
-          font-size: @s;
-          font-weight: bold;
-          color: @lightText;
+  button {
+    width: 200px;
+    margin: 20px 0;
+    padding: 10px;
 
-          &:hover {
-            color: @accent;
-          }
-        }
+    a {
+      text-decoration: none;
+      font-size: @m;
+      font-weight: bold;
+      color: @lightText;
+
+      &:hover {
+        color: @accent;
       }
-
     }
   }  
 }
 
-
-  .testimonials {
+  #testimonials {
     .testimony {
       width: 100%;
       max-width: 1000px;
@@ -186,8 +187,7 @@
       align-items: center;
       padding: 10px;
       position: relative;
-
-      animation: slideLeft 0.5s forwards;    
+      animation: slideLeft 1s forwards;    
 
       @media @desktop {
         width: 88%;
@@ -201,11 +201,20 @@
         margin: 5px 0;
       }
 
-      .img-content-wrapper, .text-content {
-        @media @desktop {flex: 0 0 46%;}
+      .text-content {
+        @media @desktop {flex: 0 0 60%;}
       }
 
       .img-content-wrapper {
+        width: 65%;
+
+        @media @tablet {
+          width: 60%;
+        }
+
+        @media @desktop {
+          width: 35%;
+        }
         img {
           border-radius: 10px;
         }
@@ -243,15 +252,6 @@
     } //testimony
   } //testimonials
 
-  .inverse-content {
-    flex-direction: column-reverse;
-
-    @media @desktop {
-      
-      .flex(@justify:space-evenly;@align:center);
-    }
-  }
-
   @keyframes slideLeft {
     100% { left: 0; }
   }
@@ -259,4 +259,21 @@
   @keyframes slideRight {
     100% { right: 0; }
   }
+
+  button {
+    width: 200px;
+    margin: 20px 0;
+    padding: 10px;
+
+    a {
+      text-decoration: none;
+      font-size: @m;
+      font-weight: bold;
+      color: @lightText;
+
+      &:hover {
+        color: @accent;
+      }
+    }
+  }  
 }

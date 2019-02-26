@@ -24,8 +24,8 @@ h1 {
   font-size: @ml;
   font-weight: bold;
   
-    @media @tablet, @desktop {
-      font-size: 4rem;
+  @media @tablet {
+    font-size: @l;
   }
 }
 
@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: @s;
   font-weight: bold;
 
   @media @desktop {
@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-  font-size: @s;
+  font-size: @xs;
   font-weight: bold;
 
   @media @desktop {
@@ -61,7 +61,7 @@ p {
   line-height: 1.4;
 
   @media @desktop {
-    font-size: 1.6rem;
+    font-size: @s;
   }
 }
 
@@ -73,7 +73,7 @@ ul, ol {
     line-height: 1.4;
 
     @media @desktop {
-      font-size: 1.6rem;
+      font-size: @s;
     }
   }
 }
@@ -93,7 +93,7 @@ a {
   color: @defaultLinkColor;
 
   @media @desktop {
-    font-size: 1.6rem;
+    font-size: @s;
   }
 
   &:hover {
@@ -103,12 +103,12 @@ a {
 
 button {
   .buttonColor(@fontColor:@lightText,@bgColor:@primaryColor);
-  .buttonSize(@width:100px; @height:auto;@fontSize:1rem);
+  .buttonSize(@width:100px; @height:auto;@fontSize:@xs);
   .buttonShape(@bRadius:15px; @paddingHeight:5px; @paddingWidth:5px);  
   .buttonStyle(@textAlign:center;@decor:none;@cursor:pointer);
 
   @media @desktop {
-    .buttonSize(@width:100px; @height:auto;@fontSize:1.2rem);
+    .buttonSize(@width:100px; @height:auto;@fontSize:@s);
   }
 }
 
