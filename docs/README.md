@@ -3,7 +3,7 @@ The Bountiful Children's Foundation needs a way to collect success stories from 
 
 The Landing Page serves two purposes:
   1. Provide an accessible entry point for Bountiful coordinators to log into the app.
-  2. Establish an online presence that attracts donors and volunteeers.
+  2. Establish an online presence that attracts donors and volunteers.
 
 ---
 ## Development
