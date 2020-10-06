@@ -1,5 +1,5 @@
 
-let url = "https://bountifulapp.netlify.com/docs/MEDIA.md"
+let url = "https://bountifulapp.netlify.app/docs/MEDIA.md"
 
 async function getData(url) {
   let downloadData = await fetch(url)
